@@ -17,8 +17,8 @@ if($conexao->connection_errono ){
 }else{
     echo "Conexão efetuada com sucesso";
 }
-
 */
+
 
 
 
