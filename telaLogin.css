@@ -21,7 +21,7 @@ input{
 }
 
 
-button{
+.botaoSubmit{
     background-color:rgba(44, 88, 94 );
     color: white;
     cursor: pointer;
@@ -32,9 +32,13 @@ button{
 
 }
 
-button:hover{
+.botaoSubmit:hover{
   
     color:rgba(44, 88, 94 );
     background-color: white;
 
+}
+
+a{
+    color:  rgb(223, 129, 61);
 }
