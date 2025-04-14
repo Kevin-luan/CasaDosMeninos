@@ -1,3 +1,20 @@
+<?php
+if(isset($_POST['submit'])){
+
+
+
+    //teste para receber os valores digitados
+
+      
+ print_($_POST['genero']);
+    
+
+    
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="pr-br">
 <head>
