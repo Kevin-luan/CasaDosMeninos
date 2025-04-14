@@ -5,12 +5,24 @@ if (isset($_POST['submit'])) {
 
     //teste para receber os valores digitados
 
-
+/*
     print_r(value: $_POST['idade']);
     print_r(value: '<br>');
     print_r(value: $_POST['genero']);
     print_r(value: '<br>');
+    print_r(value: $_POST['raca']);
+    print_r(value: '<br>'); */
 
+
+    include_once('config.php');
+    $idade = $_POST['idade'];
+    $genero = $_POST['genero'];
+    $raca = $_POST['raca']; 
+
+
+
+
+ 
 
 
 }
@@ -76,6 +88,24 @@ if (isset($_POST['submit'])) {
                     <label for="outros">Outros</label><br>
 
                     <!---- 3 pergunta-->
+
+                    <p>Com qual cor raça você se identifica: </p>
+
+                    <input type="radio" name="raca" id="raca" class="raca" value="preta" required>
+                    <label for="preta">preta</label><br>
+
+                    <input type="radio" name="raca" id="raca" class="raca" value="branca" required>
+                    <label for="branca">branca</label><br>
+
+                    <input type="radio" name="raca" id="raca" class="raca" value="parda" required>
+                    <label for="parda">parda</label><br>
+
+                    <input type="radio" name="raca" id="raca" class="raca" value="amarela" required>
+                    <label for="amarela">amarela</label><br>
+
+                    <input type="radio" name="raca" id="raca" class="raca" value="indegena" required>
+                    <label for="indigina">Indigina</label><br>
+
 
 
 
