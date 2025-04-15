@@ -11,7 +11,7 @@
 <body>
     <!-- #region -->
 
-    <a href="perguntas.html">Voltar</a>
+    <a href="primeiraTela.php">Voltar</a>
     <div>
         <h1>Login</h1>
         <form action="testeLogin.php" method="POST">
