@@ -19,10 +19,14 @@ position: absolute;
 
 .coluna th{
     color: white;
-    font-size: 25px;
-    padding: 30px;
+    font-size: 15px;
+    padding: 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgba(44, 88, 94, 0.271);
 
+}
+th{
+    border-radius: 5px;
 }
 
 a{

@@ -40,9 +40,7 @@ if (isset($_POST['submit'])) {
 </head>
 
 <body>
-    <header>
-        <a href="login.php"><button>Novo endereço</button></a>
-    </header>
+
 
 
     <div class="box">

@@ -85,7 +85,7 @@ if(isset($_POST['submit'])){
         
 
         </form>
-        <a href="perguntas.php
+        <a href="primeiraTela.php
         "><button>Voltar</button></a>
 
     </div>

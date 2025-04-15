@@ -25,16 +25,19 @@ $result = $conexao->query(query: $sql);
     
 </body>
 </html>
+<header>
+        <a href="login.php"><button>Novo endereço</button></a>
+    </header>
 
 <div class="m-5" >
     <table class="table">
         <thead class="coluna" >
             <tr>
-                <th scope="col">Id  </th>
+                <th scope="col">Id</th>
                 <th scope="col">nome</th>
                 <th scope="col">cidade</th>
                 <th scope="col">estado</th>
-                <th scope="col"></th>
+                <th scope="col">selecão</th>
                 
             </tr>
         </thead>
