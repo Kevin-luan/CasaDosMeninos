@@ -18,11 +18,12 @@ position: absolute;
 }
 
 .coluna th{
+    
     color: white;
     font-size: 15px;
     padding: 10px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: rgba(44, 88, 94, 0.271);
+    font-family: cursive;
+    background-color:rgb(44, 90, 70);
 
 }
 th{
@@ -30,7 +31,7 @@ th{
 }
 
 a{
-    color: rgba(44, 88, 94 );
+    color: rgb(17, 37, 28);
 
 }
 
@@ -39,4 +40,16 @@ a:hover{
     color: rgb(255, 255, 255);
 
 }
+tbody{
+    font-family: cursive;
+    background-color: rgba(44, 90, 70, 0.333);
+    
+    color: orange;
+  
 
+  
+}
+
+td{
+    padding: 10px;
+}
