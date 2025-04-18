@@ -1,31 +1,54 @@
 <?php
-if (isset($_POST['submit'])) {
 
 
 
-    //teste para receber os valores digitados
-
-/*
-    print_r(value: $_POST['idade']);
-    print_r(value: '<br>');
-    print_r(value: $_POST['genero']);
-    print_r(value: '<br>');
-    print_r(value: $_POST['raca']);
-    print_r(value: '<br>'); */
-
+if (!empty($_GET['id'])) {
 
     include_once('config.php');
-    $idade = $_POST['idade'];
-    $genero = $_POST['genero'];
-    $raca = $_POST['raca']; 
+    $ids = $_GET['id'];
 
-
-
-
- 
-
+   
 
 }
+
+    if (isset($_POST['submit'])) {
+
+
+
+        include_once('config.php');
+
+        $ids = $_POST['ids'];
+        $idade = $_POST['idade'];
+
+
+
+
+        $result = mysqli_query(mysql: $conexao, query: "INSERT INTO teste(idEndereco,resposta) VALUES('$ids','$idade')");
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ?>
 
@@ -36,7 +59,7 @@ if (isset($_POST['submit'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>selecct enderecos</title>
-    <link rel="stylesheet" href="selecaoEndereco.css">
+    <link rel="stylesheet" href="selecaoEndereco">
 </head>
 
 <body>
@@ -52,16 +75,18 @@ if (isset($_POST['submit'])) {
 
                     <!---- 1 pergunta-->
 
+                    <input type="hidden" name="ids" value="<?php echo htmlspecialchars($ids); ?>">
+
                     <p>Sua idade</p>
 
                     <input type="radio" name="idade" id="idade" class="idade" value="cianca" required>
                     <label for="crianca">Criança</label>
 
                     <input type="radio" name="idade" id="idade" class="idade" value="adulto" required>
-                    <label for="crianca">Criança</label>
+                    <label for="adulto">Adulto</label>
 
                     <input type="radio" name="idade" id="idade" class="idade" value="adolelcente" required>
-                    <label for="crianca">Criança</label>
+                    <label for="adolelcente">Adolelcente</label>
 
                     <!---- 2 pergunta-->
 
