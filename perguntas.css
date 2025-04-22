@@ -1,0 +1,49 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:rgb(44, 90, 70);
+   }
+
+#enviar{
+    color:green;
+    padding-right: 10px;
+    
+}
+
+#enviar:hover{
+    color:white;
+    background-color:green;
+}
+
+
+#voltar{
+    color: blue;
+    padding-right: 10px;
+    
+}
+
+
+#voltar:hover{
+    color:white;
+    background-color: rgb(46, 103, 249);
+    
+}
+
+.perguntaBotao {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding: 50px;
+  }
+
+  fieldset{
+
+  }
+
+  
+legend{
+    border: 3px solid  rgba(44, 88, 94 );
+    padding: 5px;
+    background-color:  rgba(44, 88, 94 );
+    border-radius: 10px;
+    
+}

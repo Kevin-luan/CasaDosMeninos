@@ -42,6 +42,7 @@ $result = $conexao->query(query: $sql);
             </tr>
         </thead>
         <tbody>
+            <div class="get">
             <?php 
 
             while($user_data = mysqli_fetch_assoc($result)){
@@ -68,9 +69,10 @@ $result = $conexao->query(query: $sql);
                 
 
             }
-           
+          
             
             ?>
+              </div>
         </tbody>
 
     </table>

@@ -19,11 +19,13 @@ if (!empty($_GET['id'])) {
 
         $ids = $_POST['ids'];
         $idade = $_POST['idade'];
+        $genero = $_POST['genero'];
+        $raca = $_POST['raca'];
 
 
 
 
-        $result = mysqli_query(mysql: $conexao, query: "INSERT INTO teste(idEndereco,resposta) VALUES('$ids','$idade')");
+        $result = mysqli_query(mysql: $conexao, query: "INSERT INTO teste(idEndereco,respostaIdade,respostaGenero,respostaRaca) VALUES('$ids','$idade','$genero','$raca')");
 
 
 
@@ -59,7 +61,7 @@ if (!empty($_GET['id'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>selecct enderecos</title>
-    <link rel="stylesheet" href="selecaoEndereco">
+        <link rel="stylesheet" href="perguntas.css">
 </head>
 
 <body>
@@ -132,8 +134,8 @@ if (!empty($_GET['id'])) {
 
 
                     <div class="perguntaBotao"> 
-                          <input type="submit" name="submit" id="submit">
-                          <a href="primeiraTela.php"><input type="button" value="Voltar"></a>
+                          <input id="enviar" type="submit" name="submit" id="submit">
+                          <a href="primeiraTela.php"><input id="voltar" type="button" value="Voltar"></a>
 
 
                     </div>
