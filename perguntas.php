@@ -234,11 +234,32 @@ if (isset($_POST['submit'])) {
                 </label><br>
 
 
-
-
-
                 <label for="nome">Outro motivo (especifique): </label>
                 <input type="text" name="motivacaoTrabalho[]" id="motivacaoTrabalho[]" class="inputUser" required>
+
+
+                <!---- 7 pergunta verdadeiro ou falso--------------------------------------------------->
+                <h4>Desde 2013 o ensino obrigatório passou a ser da educação infantil a partir de 4 anos até o fim do
+                    ensino médio. Por quais motivos você acha que levou a educação do ensino básico (4 a 17 anos) se
+                    tornar obrigatório no Brasil?</h4>
+
+                <p>Para cumprir a Emenda Constitucional nº 59/2009, que ampliou a obrigatoriedade da educação básica."
+
+                </p>
+                <input type="radio" name="7/1" id="7/1" class="7/1" value="Verdadeiro" required>
+                <label for="verdadeiro">verdadeiro</label><br>
+
+                <input type="radio" name="7/1" id="7/1" class="7/1" value="falso" required>
+                <label for="falso">Falso</label><br>
+                <!------>
+
+                <p>Para alinhar o Brasil às metas do Plano Nacional de Educação (PNE), que prevê a universalização do acesso.  </p>
+                <input type="radio" name="7/2" id="7/2" class="7/2" value="Verdadeiro" required>
+                <label for="verdadeiro">verdadeiro</label><br>
+
+                <input type="radio" name="7/2" id="7/2" class="7/2" value="falso" required>
+                <label for="falso">Falso</label><br>
+
 
 
 
