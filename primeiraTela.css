@@ -1,6 +1,6 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(to right, rgba(44, 88, 94 ),rgb(44, 90, 70));
+    background-image: linear-gradient(to right, rgb(255, 255, 255),rgb(44, 90, 70));
 
 }
 
@@ -44,7 +44,7 @@ tbody{
     font-family: cursive;
     background-color: rgba(44, 90, 70, 0.333);
     
-    color: orange;
+    color: rgb(255, 255, 255);
   
 
   
@@ -52,4 +52,10 @@ tbody{
 
 td{
     padding: 10px;
+}
+
+
+.perguntaBotao{
+
+    color: aqua;
 }

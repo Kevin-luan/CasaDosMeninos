@@ -131,10 +131,13 @@ if (!empty($_GET['id'])) {
 
 
 
+                    <div class="perguntaBotao"> 
+                          <input type="submit" name="submit" id="submit">
+                          <a href="primeiraTela.php"><input type="button" value="Voltar"></a>
 
-                    <input type="submit" name="submit" id="submit">
 
-
+                    </div>
+                 
 
                 </nav>
 
