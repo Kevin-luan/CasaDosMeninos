@@ -416,6 +416,14 @@ if (isset($_POST['submit'])) {
                 </div>
 
 
+<div class="pergunta10">
+ <p>Por qual motivo você acha que foi construído o estatuto da criança e adolescente? campo aberto 
+    
+ </p>
+
+</div>
+
+
 
 
 
