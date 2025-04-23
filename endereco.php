@@ -88,8 +88,7 @@ if(isset($_POST['submit'])){
         <a href="primeiraTela.php
         "><button>Voltar</button></a>
 
-    </div>
-    
+    </div> 
 
 </body>
 
