@@ -44,8 +44,23 @@ if (isset($_POST['submit'])) {
         $motivacaoTrabalho = '';  // Caso nenhuma opção tenha sido marcada
     }
 
+    $pergunta7A = $_POST['pergunta7A'];
+    $pergunta7B = $_POST['pergunta7B'];
+    $pergunta7C = $_POST['pergunta7C'];
+    $pergunta7D = $_POST['pergunta7D'];
+    $pergunta7E = $_POST['pergunta7E'];
 
-    $result = mysqli_query(mysql: $conexao, query: "INSERT INTO teste(idEndereco,respostaIdade,respostaGenero,respostaRaca,respostaEscolaridade,respostaTrabalho,respostamotivacaoTrabalho) VALUES('$ids','$idade','$genero','$raca','$escolaridade','$trabalha','$motivacaoTrabalho')");
+    // resposta sim ou não 
+
+    $pergunta8 = $_POST['pergunta8'];
+    $pergunta9 = $_POST['pergunta9'];
+
+
+
+
+    $result = mysqli_query(mysql: $conexao, query: "INSERT INTO teste(idEndereco,respostaIdade,respostaGenero,respostaRaca,respostaEscolaridade,respostaTrabalho,respostamotivacaoTrabalho,respostapergunta7A,respostapergunta7B,respostapergunta7C,respostapergunta7D,respostapergunta7E,respostapergunta8,respostapergunta9) 
+    
+            VALUES('$ids','$idade','$genero','$raca','$escolaridade','$trabalha','$motivacaoTrabalho','$pergunta7A','$pergunta7B','$pergunta7C','$pergunta7D','$pergunta7E',' $pergunta8', '$pergunta9')");
 
 
 
@@ -272,34 +287,133 @@ if (isset($_POST['submit'])) {
                         do
                         ensino médio. Por quais motivos você acha que levou a educação do ensino básico (4 a 17 anos) se
                         tornar obrigatório no Brasil?</h4><br><br>
-                        
-                        
-                        <h4>Verdadeiro ou falso</h4>
-
-                    <p>Para cumprir a Emenda Constitucional nº 59/2009, que ampliou a obrigatoriedade da educação
-                        básica."
-
-                    </p>
-                    <input type="radio" name="7/1" id="7/1" class="7/1" value="Verdadeiro" required>
-                    <label for="verdadeiro">verdadeiro</label><br>
-
-                    <input type="radio" name="7/1" id="7/1" class="7/1" value="falso" required>
-                    <label for="falso">Falso</label><br>
-                    <!------>
-
-                    <p>Para alinhar o Brasil às metas do Plano Nacional de Educação (PNE), que prevê a universalização
-                        do
-                        acesso. </p>
-                    <input type="radio" name="7/2" id="7/2" class="7/2" value="Verdadeiro" required>
-                    <label for="verdadeiro">verdadeiro</label><br>
-
-                    <input type="radio" name="7/2" id="7/2" class="7/2" value="falso" required>
-                    <label for="falso">Falso</label><br>
 
 
+                    <h4>Verdadeiro ou falso</h4>
+
+                    <div class="pergunta7A">
+
+                        <p>Para cumprir a Emenda Constitucional nº 59/2009, que ampliou a obrigatoriedade da educação
+                            básica."
+                        </p>
+
+                        <input type="radio" name="pergunta7A" id="pergunta7A" class="pergunta7A" value="Verdadeiro"
+                            required>
+                        <label for="verdadeiro">verdadeiro</label><br>
+
+                        <input type="radio" name="pergunta7A" id="pergunta7A" class="pergunta7A" value="falso" required>
+                        <label for="falso">Falso</label><br>
+
+                    </div>
+
+
+
+                    <!---------->
+                    <div class="pergunta7B">
+
+
+                        <p>Para alinhar o Brasil às metas do Plano Nacional de Educação (PNE), que prevê a
+                            universalização
+                            do
+                            acesso. </p>
+
+                        <input type="radio" name="pergunta7B" id="pergunta7B" class="pergunta7B" value="Verdadeiro"
+                            required>
+                        <label for="verdadeiro">verdadeiro</label><br>
+
+                        <input type="radio" name="pergunta7B" id="pergunta7B" class="pergunta7B" value="falso" required>
+                        <label for="falso">Falso</label><br>
+
+
+                    </div>
+
+
+
+                    <div class="pergunta7C">
+
+                        <p>Porque crianças a partir de 4 anos passaram a ser consideradas adultas pela legislação
+                            brasileira.
+                        </p>
+
+                        <input type="radio" name="pergunta7C" id="pergunta7C" class="pergunta7C" value="Verdadeiro"
+                            required>
+                        <label for="verdadeiro">verdadeiro</label><br>
+
+                        <input type="radio" name="pergunta7C" id="pergunta7C" class="pergunta7C" value="falso" required>
+                        <label for="falso">Falso</label><br>
+
+
+
+
+
+                    </div>
+
+                    <div class="pergunta7D">
+
+                        <p>Para evitar que adolescentes de 16 anos votem, já que estariam ocupados com os estudos.
+                        </p>
+
+                        <input type="radio" name="pergunta7D" id="pergunta7D" class="pergunta7D" value="Verdadeiro"
+                            required>
+                        <label for="verdadeiro">verdadeiro</label><br>
+
+                        <input type="radio" name="pergunta7D" id="pergunta7D" class="pergunta7D" value="falso" required>
+                        <label for="falso">Falso</label><br>
+
+
+
+
+
+                    </div>
+
+
+                    <div class="pergunta7E">
+
+                        <p>Porque empresas privadas exigiam mão de obra mais qualificada desde a primeira infância.
+                        </p>
+
+                        <input type="radio" name="pergunta7E" id="pergunta7E" class="pergunta7E" value="Verdadeiro"
+                            required>
+                        <label for="verdadeiro">verdadeiro</label><br>
+
+                        <input type="radio" name="pergunta7E" id="pergunta7E" class="pergunta7E" value="falso" required>
+                        <label for="falso">Falso</label><br>
+
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+
+                <!---- 8 pergunta verdadeiro ou falso------------------------>
+
+                <div class="pergunta8">
+                    <p>Você sabe o que é o ECA</p>
+
+                    <input type="radio" name="pergunta8" id="pergunta8" class="pergunta8" value="Sim" required>
+                    <label for="verdadeiro">Sim</label><br>
+
+                    <input type="radio" name="pergunta8" id="pergunta8" class="pergunta8" value="Não" required>
+                    <label for="verdadeiro">Não</label><br>
 
                 </div>
 
+
+                <div class="pergunta9">
+                    <p>Você sabe quando o ECA foi criado</p>
+
+                    <input type="radio" name="pergunta9" id="pergunta9" class="pergunta9" value="Sim" required>
+                    <label for="verdadeiro">Sim</label><br>
+
+                    <input type="radio" name="pergunta9" id="pergunta9" class="pergunta9" value="Não" required>
+                    <label for="verdadeiro">Não</label><br>
+
+                </div>
 
 
 
