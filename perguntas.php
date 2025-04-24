@@ -43,6 +43,7 @@ if (isset($_POST['submit'])) {
     } else {
         $motivacaoTrabalho = '';  // Caso nenhuma opção tenha sido marcada
     }
+    // pergunta 7 de verdadeiro ou falso 
 
     $pergunta7A = $_POST['pergunta7A'];
     $pergunta7B = $_POST['pergunta7B'];
@@ -55,12 +56,30 @@ if (isset($_POST['submit'])) {
     $pergunta8 = $_POST['pergunta8'];
     $pergunta9 = $_POST['pergunta9'];
 
+    // Pergunta de camppo aberto
+
+    $pergunta10 = $_POST['pergunta10'];
+
+    //pergunta 11 de verdadeiro ou falso (todas verdadeiras)
+    $pergunta11A = $_POST['pergunta11A'];
+    $pergunta11B = $_POST['pergunta11B'];
+    $pergunta11C = $_POST['pergunta11C'];
+    $pergunta11D = $_POST['pergunta11D'];
+    $pergunta11E = $_POST['pergunta11E'];
+
+    //perguntas 11 de verdadeira ou falsa (todas falsa)
+    $pergunta11F = $_POST['pergunta11F'];
+    $pergunta11G = $_POST['pergunta11G'];
+    $pergunta11H = $_POST['pergunta11H'];
+    $pergunta11I = $_POST['pergunta11I'];
+    $pergunta11J = $_POST['pergunta11J'];
 
 
 
-    $result = mysqli_query(mysql: $conexao, query: "INSERT INTO teste(idEndereco,respostaIdade,respostaGenero,respostaRaca,respostaEscolaridade,respostaTrabalho,respostamotivacaoTrabalho,respostapergunta7A,respostapergunta7B,respostapergunta7C,respostapergunta7D,respostapergunta7E,respostapergunta8,respostapergunta9) 
+
+    $result = mysqli_query(mysql: $conexao, query: "INSERT INTO teste(idEndereco,respostaIdade,respostaGenero,respostaRaca,respostaEscolaridade,respostaTrabalho,respostamotivacaoTrabalho,respostapergunta7A,respostapergunta7B,respostapergunta7C,respostapergunta7D,respostapergunta7E,respostapergunta8,respostapergunta9,respostapergunta10,respostapergunta11A,respostapergunta11B,respostapergunta11C,respostapergunta11D,respostapergunta11E,respostapergunta11F,respostapergunta11G,respostapergunta11H,respostapergunta11I,respostapergunta11J) 
     
-            VALUES('$ids','$idade','$genero','$raca','$escolaridade','$trabalha','$motivacaoTrabalho','$pergunta7A','$pergunta7B','$pergunta7C','$pergunta7D','$pergunta7E',' $pergunta8', '$pergunta9')");
+            VALUES('$ids','$idade','$genero','$raca','$escolaridade','$trabalha','$motivacaoTrabalho','$pergunta7A','$pergunta7B','$pergunta7C','$pergunta7D','$pergunta7E',' $pergunta8', '$pergunta9','$pergunta10','$pergunta11A','$pergunta11B','$pergunta11C','$pergunta11D','$pergunta11E','$pergunta11F','$pergunta11G','$pergunta11H','$pergunta11I','$pergunta11J')");
 
 
 
@@ -275,10 +294,7 @@ if (isset($_POST['submit'])) {
                 </div>
 
 
-
                 <!---- 7 pergunta verdadeiro ou falso------------------------>
-
-
 
 
                 <div class="pergunta7">
@@ -390,7 +406,7 @@ if (isset($_POST['submit'])) {
                     </div>
                 </div>
 
-                <!---- 8 pergunta verdadeiro ou falso------------------------>
+                <!---- 8 pergunta ------------------------>
 
                 <div class="pergunta8">
                     <p>Você sabe o que é o ECA</p>
@@ -402,7 +418,7 @@ if (isset($_POST['submit'])) {
                     <label for="verdadeiro">Não</label><br>
 
                 </div>
-
+                <!---- 9 pergunta ------------------------>
 
                 <div class="pergunta9">
                     <p>Você sabe quando o ECA foi criado</p>
@@ -415,13 +431,179 @@ if (isset($_POST['submit'])) {
 
                 </div>
 
+                <!---- 10 pergunta ------------------------>
 
-<div class="pergunta10">
- <p>Por qual motivo você acha que foi construído o estatuto da criança e adolescente? campo aberto 
-    
- </p>
 
-</div>
+                <div class="pergunta10">
+                    <p>Por qual motivo você acha que foi construído o estatuto da criança e adolescente?</p>
+
+                    <label for="nome">Resposta: </label>
+                    <input type="text" name="pergunta10" id="pergunta10" class="inputUser" required>
+
+                </div>
+
+                <!---- 10 pergunta perguntas de verdeiro ou falso------------------------>
+
+                <div class="pergunta11">
+
+                    <h4>O que o Conselho Tutelar realmente faz </h4>
+
+
+                    <div class="pergunta11A">
+                        <p>Atender crianças e adolescentes em situação de risco (violência, abandono, trabalho infantil)
+                        </p>
+
+                        <input type="radio" name="pergunta11A" id="pergunta11A" class="pergunta11A" value="Verdadeiro"
+                            required>
+                        <label for="verdadeiro">verdadeiro</label><br>
+
+                        <input type="radio" name="pergunta11A" id="pergunta11A" class="pergunta11A" value="falso"
+                            required>
+                        <label for="falso">Falso</label><br>
+
+                    </div>
+
+                    <div class="pergunta11B">
+                        <p>Aplicar medidas de proteção, como encaminhamento a abrigos ou programas sociais.
+                        </p>
+
+                        <input type="radio" name="pergunta11B" id="pergunta11B" class="pergunta11B" value="Verdadeiro"
+                            required>
+                        <label for="verdadeiro">verdadeiro</label><br>
+
+                        <input type="radio" name="pergunta11B" id="pergunta11B" class="pergunta11B" value="falso"
+                            required>
+                        <label for="falso">Falso</label><br>
+
+                    </div>
+
+                    <div class="pergunta11C">
+                        <p>Fiscalizar o cumprimento dos direitos da criança e do adolescente (educação, saúde,
+                            convivência familiar.
+                        </p>
+
+                        <input type="radio" name="pergunta11C" id="pergunta11C" class="pergunta11C" value="Verdadeiro"
+                            required>
+                        <label for="verdadeiro">verdadeiro</label><br>
+
+                        <input type="radio" name="pergunta11C" id="pergunta11C" class="pergunta11C" value="falso"
+                            required>
+                        <label for="falso">Falso</label><br>
+
+                    </div>
+
+                    <div class="pergunta11D">
+                        <p>"Receber denúncias de violações de direitos via Disque 100 ou diretamente na sede
+                        </p>
+
+                        <input type="radio" name="pergunta11D" id="pergunta11D" class="pergunta11D" value="Verdadeiro"
+                            required>
+                        <label for="verdadeiro">verdadeiro</label><br>
+
+                        <input type="radio" name="pergunta11D" id="pergunta11D" class="pergunta11D" value="falso"
+                            required>
+                        <label for="falso">Falso</label><br>
+
+                    </div>
+
+                    <div class="pergunta11E">
+                        <p>Exigir que pais ou responsáveis cumpram obrigações (como matricular filhos na escola).
+                        </p>
+
+                        <input type="radio" name="pergunta11E" id="pergunta11E" class="pergunta11E" value="Verdadeiro"
+                            required>
+                        <label for="verdadeiro">verdadeiro</label><br>
+
+                        <input type="radio" name="pergunta11E" id="pergunta11E" class="pergunta11E" value="falso"
+                            required>
+                        <label for="falso">Falso</label><br>
+
+                    </div>
+
+
+                    <div class="pergunta11F">
+                        <p>Punir adolescentes infratores com prisão ou medidas socioeducativas.
+                        </p>
+
+                        <input type="radio" name="pergunta11F" id="pergunta11F" class="pergunta11F" value="Verdadeiro"
+                            required>
+                        <label for="verdadeiro">verdadeiro</label><br>
+
+                        <input type="radio" name="pergunta11F" id="pergunta11F" class="pergunta11F" value="falso"
+                            required>
+                        <label for="falso">Falso</label><br>
+
+                    </div>
+
+
+                    <div class="pergunta11G">
+                        <p>"Substituir a família, tirando crianças de casa sem justificativa legal.
+                        </p>
+
+                        <input type="radio" name="pergunta11G" id="pergunta11G" class="pergunta11G" value="Verdadeiro"
+                            required>
+                        <label for="verdadeiro">verdadeiro</label><br>
+
+                        <input type="radio" name="pergunta11G" id="pergunta11G" class="pergunta11G" value="falso"
+                            required>
+                        <label for="falso">Falso</label><br>
+
+                    </div>
+
+                    <div class="pergunta11H">
+                        <p>"Dar multas ou prender pais que não vacinarem os filhos.
+                        </p>
+
+                        <input type="radio" name="pergunta11H" id="pergunta11H" class="pergunta11H" value="Verdadeiro"
+                            required>
+                        <label for="verdadeiro">verdadeiro</label><br>
+
+                        <input type="radio" name="pergunta11H" id="pergunta11H" class="pergunta11H" value="falso"
+                            required>
+                        <label for="falso">Falso</label><br>
+
+                    </div>
+
+
+                    <div class="pergunta11I">
+                        <p>Fornecer auxílio financeiro diretamente às famílias.
+                        </p>
+
+                        <input type="radio" name="pergunta11I" id="pergunta11I" class="pergunta11I" value="Verdadeiro"
+                            required>
+                        <label for="verdadeiro">verdadeiro</label><br>
+
+                        <input type="radio" name="pergunta11I" id="pergunta11I" class="pergunta11I" value="falso"
+                            required>
+                        <label for="falso">Falso</label><br>
+
+                    </div>
+
+                    <div class="pergunta11J">
+                        <p>Fornecer auxílio financeiro diretamente às famílias.
+                        </p>
+
+                        <input type="radio" name="pergunta11J" id="pergunta11J" class="pergunta11J" value="Verdadeiro"
+                            required>
+                        <label for="verdadeiro">verdadeiro</label><br>
+
+                        <input type="radio" name="pergunta11J" id="pergunta11J" class="pergunta11J" value="falso"
+                            required>
+                        <label for="falso">Falso</label><br>
+
+                    </div>
+
+
+                    
+
+
+
+
+
+
+                </div>
+
+
 
 
 
