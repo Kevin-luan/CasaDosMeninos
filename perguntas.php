@@ -78,13 +78,19 @@ if (isset($_POST['submit'])) {
     $pergunta12 = $_POST['pergunta12'];
     //pergunta 13
     $pergunta13 = $_POST['pergunta13'];
+    //pergunta 14
+    $pergunta14 = $_POST['pergunta14'];
+    //pergunta 15
+    $pergunta15 = $_POST['pergunta15'];
+    // perrgunta 16
+    $pergunta16 = $_POST['pergunta16'];
 
 
 
 
-    $result = mysqli_query(mysql: $conexao, query: "INSERT INTO teste(idEndereco,respostaIdade,respostaGenero,respostaRaca,respostaEscolaridade,respostaTrabalho,respostamotivacaoTrabalho,respostapergunta7A,respostapergunta7B,respostapergunta7C,respostapergunta7D,respostapergunta7E,respostapergunta8,respostapergunta9,respostapergunta10,respostapergunta11A,respostapergunta11B,respostapergunta11C,respostapergunta11D,respostapergunta11E,respostapergunta11F,respostapergunta11G,respostapergunta11H,respostapergunta11I,respostapergunta11J,respostapergunta12,respostapergunta13) 
+    $result = mysqli_query(mysql: $conexao, query: "INSERT INTO teste(idEndereco,respostaIdade,respostaGenero,respostaRaca,respostaEscolaridade,respostaTrabalho,respostamotivacaoTrabalho,respostapergunta7A,respostapergunta7B,respostapergunta7C,respostapergunta7D,respostapergunta7E,respostapergunta8,respostapergunta9,respostapergunta10,respostapergunta11A,respostapergunta11B,respostapergunta11C,respostapergunta11D,respostapergunta11E,respostapergunta11F,respostapergunta11G,respostapergunta11H,respostapergunta11I,respostapergunta11J,respostapergunta12,respostapergunta13,respostapergunta14,respostapergunta15,respostapergunta16) 
     
-            VALUES('$ids','$idade','$genero','$raca','$escolaridade','$trabalha','$motivacaoTrabalho','$pergunta7A','$pergunta7B','$pergunta7C','$pergunta7D','$pergunta7E',' $pergunta8', '$pergunta9','$pergunta10','$pergunta11A','$pergunta11B','$pergunta11C','$pergunta11D','$pergunta11E','$pergunta11F','$pergunta11G','$pergunta11H','$pergunta11I','$pergunta11J','$pergunta12','$pergunta13')");
+            VALUES('$ids','$idade','$genero','$raca','$escolaridade','$trabalha','$motivacaoTrabalho','$pergunta7A','$pergunta7B','$pergunta7C','$pergunta7D','$pergunta7E',' $pergunta8', '$pergunta9','$pergunta10','$pergunta11A','$pergunta11B','$pergunta11C','$pergunta11D','$pergunta11E','$pergunta11F','$pergunta11G','$pergunta11H','$pergunta11I','$pergunta11J','$pergunta12','$pergunta13','$pergunta14','$pergunta15','$pergunta16')");
 
 
 
@@ -643,6 +649,58 @@ if (isset($_POST['submit'])) {
 
 
                 </div>
+
+                <!---- 14 pergunta perguntas de verdeiro ou falso------------------------>
+                <div class="pergunta14">
+
+                    <p>Na escola você discute sobre o DCA:
+                    </p>
+
+                    <input type="radio" name="pergunta14" id="pergunta14" class="pergunta14" value="Sim" required>
+                    <label for="Sim">Sim</label><br>
+
+                    <input type="radio" name="pergunta14" id="pergunta14" class="pergunta14" value="Não" required>
+                    <label for="Sim">Não</label><br>
+
+                    <input type="radio" name="pergunta14" id="pergunta14" class="pergunta14"
+                        value="não consigo responder" required>
+                    <label for="Sim">Não consigo responder
+                    </label><br>
+                </div>
+
+
+                <!---- 15 pergunta perguntas de verdeiro ou falso------------------------>
+
+                <div class="pergunta15">
+
+                    <p>Você já ouviu falar sobre as Conferências de DCA?:
+                    </p>
+
+                    <input type="radio" name="pergunta15" id="pergunta15" class="pergunta15" value="Sim" required>
+                    <label for="Sim">Sim</label><br>
+
+                    <input type="radio" name="pergunta15" id="pergunta15" class="pergunta15" value="nao" required>
+                    <label for="nao">Não</label><br>
+
+                </div>
+
+
+                <!---- 16 pergunta perguntas de verdeiro ou falso------------------------>
+
+                <div class="pergunta16">
+
+                    <p>Você já participou de alguma Conferência DCA?
+
+                    </p>
+
+                    <input type="radio" name="pergunta16" id="pergunta16" class="pergunta16" value="Sim" required>
+                    <label for="Sim">Sim</label><br>
+
+                    <input type="radio" name="pergunta16" id="pergunta16" class="pergunta16" value="nao" required>
+                    <label for="nao">Não</label><br>
+
+                </div>
+
 
 
 
