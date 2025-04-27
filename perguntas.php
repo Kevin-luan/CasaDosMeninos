@@ -84,13 +84,21 @@ if (isset($_POST['submit'])) {
     $pergunta15 = $_POST['pergunta15'];
     // perrgunta 16
     $pergunta16 = $_POST['pergunta16'];
+    //pergunta 17
+    $pergunta17 = $_POST['pergunta17'];
+    //PERGUNTA 18
+    $pergunta18 = $_POST['pergunta18'];
+    //pergunta 19
+    $pergunta19 = $_POST['pergunta19'];
+    // pergunta 20 campo aberto
+    $pergunta20 = $_POST['pergunta20'];
 
 
 
 
-    $result = mysqli_query(mysql: $conexao, query: "INSERT INTO teste(idEndereco,respostaIdade,respostaGenero,respostaRaca,respostaEscolaridade,respostaTrabalho,respostamotivacaoTrabalho,respostapergunta7A,respostapergunta7B,respostapergunta7C,respostapergunta7D,respostapergunta7E,respostapergunta8,respostapergunta9,respostapergunta10,respostapergunta11A,respostapergunta11B,respostapergunta11C,respostapergunta11D,respostapergunta11E,respostapergunta11F,respostapergunta11G,respostapergunta11H,respostapergunta11I,respostapergunta11J,respostapergunta12,respostapergunta13,respostapergunta14,respostapergunta15,respostapergunta16) 
+    $result = mysqli_query(mysql: $conexao, query: "INSERT INTO teste(idEndereco,respostaIdade,respostaGenero,respostaRaca,respostaEscolaridade,respostaTrabalho,respostamotivacaoTrabalho,respostapergunta7A,respostapergunta7B,respostapergunta7C,respostapergunta7D,respostapergunta7E,respostapergunta8,respostapergunta9,respostapergunta10,respostapergunta11A,respostapergunta11B,respostapergunta11C,respostapergunta11D,respostapergunta11E,respostapergunta11F,respostapergunta11G,respostapergunta11H,respostapergunta11I,respostapergunta11J,respostapergunta12,respostapergunta13,respostapergunta14,respostapergunta15,respostapergunta16,respostapergunta17,respostapergunta18,respostapergunta19,respostapergunta20) 
     
-            VALUES('$ids','$idade','$genero','$raca','$escolaridade','$trabalha','$motivacaoTrabalho','$pergunta7A','$pergunta7B','$pergunta7C','$pergunta7D','$pergunta7E',' $pergunta8', '$pergunta9','$pergunta10','$pergunta11A','$pergunta11B','$pergunta11C','$pergunta11D','$pergunta11E','$pergunta11F','$pergunta11G','$pergunta11H','$pergunta11I','$pergunta11J','$pergunta12','$pergunta13','$pergunta14','$pergunta15','$pergunta16')");
+            VALUES('$ids','$idade','$genero','$raca','$escolaridade','$trabalha','$motivacaoTrabalho','$pergunta7A','$pergunta7B','$pergunta7C','$pergunta7D','$pergunta7E',' $pergunta8', '$pergunta9','$pergunta10','$pergunta11A','$pergunta11B','$pergunta11C','$pergunta11D','$pergunta11E','$pergunta11F','$pergunta11G','$pergunta11H','$pergunta11I','$pergunta11J','$pergunta12','$pergunta13','$pergunta14','$pergunta15','$pergunta16','$pergunta17','$pergunta18','$pergunta19','$pergunta20')");
 
 
 
@@ -698,6 +706,64 @@ if (isset($_POST['submit'])) {
 
                     <input type="radio" name="pergunta16" id="pergunta16" class="pergunta16" value="nao" required>
                     <label for="nao">Não</label><br>
+
+                </div>
+
+
+                <!---- 17 pergunta perguntas de verdeiro ou falso------------------------>
+                <div class="pergunta17">
+
+                    <p>Você acha que criança e adolescente precisa de mais direitos:
+                    </p>
+
+                    <label for="nome">Resposta: </label>
+                    <input type="text" name="pergunta17" id="pergunta17" class="inputUser" required>
+
+                </div>
+
+                <!---- 18 pergunta perguntas de verdeiro ou falso------------------------>
+
+                <div class="pergunta18">
+
+                    <p>Você sabia que os conselheiros tutelares são eleitos pela população a cada 4 anos?
+
+                    </p>
+
+                    <input type="radio" name="pergunta18" id="pergunta18" class="pergunta18" value="Sim" required>
+                    <label for="Sim">Sim</label><br>
+
+                    <input type="radio" name="pergunta18" id="pergunta18" class="pergunta18" value="nao" required>
+                    <label for="nao">Não</label><br>
+
+                </div>
+
+
+
+                <!---- 19 pergunta perguntas de verdeiro ou falso------------------------>
+                <div class="pergunta19">
+
+
+                    <p>você conhece algum conselheiro tutelar
+                    </p>
+
+                    <input type="radio" name="pergunta19" id="pergunta19" class="pergunta19" value="Sim" required>
+                    <label for="Sim">Sim</label><br>
+
+                    <input type="radio" name="pergunta19" id="pergunta19" class="pergunta19" value="nao" required>
+                    <label for="nao">Não</label><br>
+
+                </div>
+
+
+                <!---- 20 pergunta ------------------------>
+
+                <div class="pergunta20">
+
+                    <p>Na sua opinião, qual é um dos direitos de crianças e adolescentes mais importantes:
+                    </p>
+
+                    <label for="nome">Resposta: </label>
+                    <input type="text" name="pergunta20" id="pergunta20" class="inputUser" required>
 
                 </div>
 
