@@ -74,12 +74,17 @@ if (isset($_POST['submit'])) {
     $pergunta11I = $_POST['pergunta11I'];
     $pergunta11J = $_POST['pergunta11J'];
 
+    //pergunta 12 
+    $pergunta12 = $_POST['pergunta12'];
+    //pergunta 13
+    $pergunta13 = $_POST['pergunta13'];
 
 
 
-    $result = mysqli_query(mysql: $conexao, query: "INSERT INTO teste(idEndereco,respostaIdade,respostaGenero,respostaRaca,respostaEscolaridade,respostaTrabalho,respostamotivacaoTrabalho,respostapergunta7A,respostapergunta7B,respostapergunta7C,respostapergunta7D,respostapergunta7E,respostapergunta8,respostapergunta9,respostapergunta10,respostapergunta11A,respostapergunta11B,respostapergunta11C,respostapergunta11D,respostapergunta11E,respostapergunta11F,respostapergunta11G,respostapergunta11H,respostapergunta11I,respostapergunta11J) 
+
+    $result = mysqli_query(mysql: $conexao, query: "INSERT INTO teste(idEndereco,respostaIdade,respostaGenero,respostaRaca,respostaEscolaridade,respostaTrabalho,respostamotivacaoTrabalho,respostapergunta7A,respostapergunta7B,respostapergunta7C,respostapergunta7D,respostapergunta7E,respostapergunta8,respostapergunta9,respostapergunta10,respostapergunta11A,respostapergunta11B,respostapergunta11C,respostapergunta11D,respostapergunta11E,respostapergunta11F,respostapergunta11G,respostapergunta11H,respostapergunta11I,respostapergunta11J,respostapergunta12,respostapergunta13) 
     
-            VALUES('$ids','$idade','$genero','$raca','$escolaridade','$trabalha','$motivacaoTrabalho','$pergunta7A','$pergunta7B','$pergunta7C','$pergunta7D','$pergunta7E',' $pergunta8', '$pergunta9','$pergunta10','$pergunta11A','$pergunta11B','$pergunta11C','$pergunta11D','$pergunta11E','$pergunta11F','$pergunta11G','$pergunta11H','$pergunta11I','$pergunta11J')");
+            VALUES('$ids','$idade','$genero','$raca','$escolaridade','$trabalha','$motivacaoTrabalho','$pergunta7A','$pergunta7B','$pergunta7C','$pergunta7D','$pergunta7E',' $pergunta8', '$pergunta9','$pergunta10','$pergunta11A','$pergunta11B','$pergunta11C','$pergunta11D','$pergunta11E','$pergunta11F','$pergunta11G','$pergunta11H','$pergunta11I','$pergunta11J','$pergunta12','$pergunta13')");
 
 
 
@@ -442,7 +447,7 @@ if (isset($_POST['submit'])) {
 
                 </div>
 
-                <!---- 10 pergunta perguntas de verdeiro ou falso------------------------>
+                <!---- 11 pergunta perguntas de verdeiro ou falso------------------------>
 
                 <div class="pergunta11">
 
@@ -580,7 +585,7 @@ if (isset($_POST['submit'])) {
                     </div>
 
                     <div class="pergunta11J">
-                        <p>Fornecer auxílio financeiro diretamente às famílias.
+                        <p>Decidir sozinho sobre adoções internacionais.
                         </p>
 
                         <input type="radio" name="pergunta11J" id="pergunta11J" class="pergunta11J" value="Verdadeiro"
@@ -594,11 +599,47 @@ if (isset($_POST['submit'])) {
                     </div>
 
 
-                    
 
 
 
 
+
+
+
+                </div>
+
+
+                <!---- 12 pergunta perguntas de verdeiro ou falso------------------------>
+
+                <div class="pergunta12">
+
+
+                    <p class="paragrafo">Em relação a redução da maioridade penal você é</p>
+
+                    <input type="radio" name="pergunta12" id="pergunta12" class="pergunta12" value="contra" required>
+                    <label for="crianca">Contra</label>
+
+                    <input type="radio" name="pergunta12" id="pergunta12" class="pergunta12" value="a favor" required>
+                    <label for="crianca">A favor</label>
+
+                    <input type="radio" name="pergunta12" id="pergunta12" class="pergunta12" value="nao sei" required>
+                    <label for="crianca">Não sei</label>
+
+
+                </div>
+
+                <!---- 13 pergunta perguntas de verdeiro ou falso------------------------>
+                <div class="pergunta13">
+
+                    <p>Você participa de algum grupo ou movimento que discute sobre o Direitos de Criança e Adolescente
+                        (DCA):
+                    </p>
+
+                    <input type="radio" name="pergunta13" id="pergunta13" class="pergunta13" value="Sim" required>
+                    <label for="Sim">Sim</label><br>
+
+                    <input type="radio" name="pergunta13" id="pergunta13" class="pergunta13" value="Não" required>
+                    <label for="Não">Não</label><br>
 
 
                 </div>
