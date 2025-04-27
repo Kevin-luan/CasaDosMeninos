@@ -1,6 +1,6 @@
 <?php
 
-//teste de commit
+
 
 if (!empty($_GET['id'])) {
 
@@ -100,6 +100,14 @@ if (isset($_POST['submit'])) {
     
             VALUES('$ids','$idade','$genero','$raca','$escolaridade','$trabalha','$motivacaoTrabalho','$pergunta7A','$pergunta7B','$pergunta7C','$pergunta7D','$pergunta7E',' $pergunta8', '$pergunta9','$pergunta10','$pergunta11A','$pergunta11B','$pergunta11C','$pergunta11D','$pergunta11E','$pergunta11F','$pergunta11G','$pergunta11H','$pergunta11I','$pergunta11J','$pergunta12','$pergunta13','$pergunta14','$pergunta15','$pergunta16','$pergunta17','$pergunta18','$pergunta19','$pergunta20')");
 
+
+if ($result) {
+    // Redireciona para uma página HTML de confirmação
+    header("Location: final.html");
+    exit();
+} else {
+    echo "Erro ao enviar o formulário: " . mysqli_error($conexao);
+}
 
 
 }
