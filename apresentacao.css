@@ -1,0 +1,88 @@
+/* Resetando margens e preenchimento */
+* {
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap; /* Adiciona flexibilidade para diferentes tamanhos de tela */
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(44, 88, 94 );
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color:  rgb(235, 154, 96);
+   
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: rgba(44, 88, 94 );
+    text-decoration: none;
+    font-size: 12px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+main{
+    background-color: rgb(223, 129, 61);
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    border-radius: 30px;
+} 
+
+
+i:hover{
+    color: white;
+}
+
+
+
+
+.container button {
+    padding: 10px 20px; /* Aumenta o tamanho do botão */
+    background-color: rgba(44, 88, 94 );
+    color: white; /* Cor do texto */
+    border: none; /* Remove borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 10px; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor ao passar por cima */
+    transition: background-color 0.3s ease; /* Transição suave para mudança de cor */
+  }
+
+  /* Estilo quando o botão é pressionado */
+  .botao:hover {
+    background-color: #45a049;
+  }
+
+  /* Posiciona o botão à direita */
+  .container {
+    display: flex;
+    justify-content: flex-end; /* Alinha ao final (direita) */
+    padding: 20px;
+  }
