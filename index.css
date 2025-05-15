@@ -1,0 +1,61 @@
+header {
+   
+    background-color: rgb(223, 129, 61);
+    padding: 3px;
+    box-shadow: 10px 10px 10px pink;
+    border-radius: 5px;
+
+    
+
+    ul {
+        list-style: none; /* Remove os marcadores da lista */
+     
+        display: flex; /* Coloca os itens lado a lado */
+        gap: 15px; /* Espaçamento entre os itens */
+        justify-content: flex-end; /* Alinha tudo à direita */
+    }
+    
+    li a {
+        text-decoration: none; /* Remove o sublinhado */
+        color: #000; /* Cor do texto */
+    }
+    
+    li i {
+        margin-right:15px; /* Espaçamento entre o ícone e o texto */
+    }
+
+    /* Ajustes para telas menores */
+@media (max-width: 768px) {
+    ul {
+        justify-content: center; /* Centraliza em telas pequenas */
+    }
+
+    header {
+        padding: 10px; /* Reduz o espaço interno */
+    }
+
+    li {
+        margin: 5px 0; /* Espaçamento vertical para telas pequenas */
+    }
+}
+
+@media (max-width: 480px) {
+    ul {
+        flex-direction: column; /* Coloca os itens em coluna */
+        align-items: center; /* Centraliza cada link */
+        gap: 8px; /* Menor espaço entre os itens */
+    }
+
+    li a {
+        font-size: 14px; /* Texto um pouco menor */
+    }
+}
+
+
+    
+    
+}
+
+.texto{
+    background-color: aqua;
+}
