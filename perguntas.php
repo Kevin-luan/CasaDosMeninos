@@ -149,13 +149,13 @@ if ($result) {
                     <p class="paragrafo">Sua idade</p>
 
                     <input type="radio" name="idade" id="idade" class="idade" value="cianca" required>
-                    <label for="crianca">Criança</label>
+                    <label for="crianca">Criança&nbsp;&nbsp;&nbsp;&nbsp;</label>
 
                     <input type="radio" name="idade" id="idade" class="idade" value="adulto" required>
-                    <label for="adulto">Adulto</label>
+                    <label for="adulto">Adulto&nbsp;&nbsp;&nbsp;&nbsp;</label>
 
                     <input type="radio" name="idade" id="idade" class="idade" value="adolelcente" required>
-                    <label for="adolelcente">Adolelcente</label>
+                    <label for="adolelcente">Adolelcente</label><br><br>
 
 
 
@@ -169,19 +169,19 @@ if ($result) {
                     <p>Genero</p>
 
                     <input type="radio" name="genero" id="gereno" class="genero" value="cisgenero feminino" required>
-                    <label for="cisgenero feminino">Cisgenero feminino</label><br>
+                    <label for="cisgenero feminino">Cisgenero feminino&nbsp;&nbsp;&nbsp;&nbsp;</label>
 
                     <input type="radio" name="genero" id="gereno" class="genero" value="cisgeneromasculino" required>
-                    <label for="cisgenero masculino">Cisgenero masculino</label><br>
+                    <label for="cisgenero masculino">Cisgenero masculino&nbsp;&nbsp;&nbsp;&nbsp;</label>
 
                     <input type="radio" name="genero" id="gereno" class="genero" value="transgênero feminino" required>
-                    <label for="transgênero feminino">Transgênero feminino</label><br>
+                    <label for="transgênero feminino">Transgênero feminino&nbsp;&nbsp;&nbsp;&nbsp;</label>
 
                     <input type="radio" name="genero" id="gereno" class="genero" value="Transgênero masculino" required>
-                    <label for="Transgênero masculino">Transgênero masculino</label><br>
+                    <label for="Transgênero masculino">Transgênero masculino&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
 
                     <input type="radio" name="genero" id="gereno" class="genero" value="perfiro nao responder" required>
-                    <label for="prefiro não responder">Prefiro não responder</label><br>
+                    <label for="prefiro não responder">Prefiro não responder&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
 
                     <input type="radio" name="genero" id="gereno" class="genero" value="outros" required>
                     <label for="outros">Outros</label><br>
@@ -194,16 +194,16 @@ if ($result) {
                     <p>Com qual cor raça você se identifica: </p>
 
                     <input type="radio" name="raca" id="raca" class="raca" value="preta" required>
-                    <label for="preta">preta</label><br>
+                    <label for="preta">preta&nbsp;&nbsp;&nbsp;&nbsp;</label>
 
                     <input type="radio" name="raca" id="raca" class="raca" value="branca" required>
-                    <label for="branca">branca</label><br>
+                    <label for="branca">branca&nbsp;&nbsp;&nbsp;&nbsp;</label>
 
                     <input type="radio" name="raca" id="raca" class="raca" value="parda" required>
-                    <label for="parda">parda</label><br>
+                    <label for="parda">parda&nbsp;&nbsp;&nbsp;&nbsp;</label>
 
                     <input type="radio" name="raca" id="raca" class="raca" value="amarela" required>
-                    <label for="amarela">amarela</label><br>
+                    <label for="amarela">amarela&nbsp;&nbsp;&nbsp;&nbsp;</label>
 
                     <input type="radio" name="raca" id="raca" class="raca" value="indegena" required>
                     <label for="indigina">Indigina</label><br><br>
@@ -216,20 +216,20 @@ if ($result) {
 
                     <input type="radio" name="escolaridade" id="escolaridade" class="escolaridade"
                         value="ensino fundamental" required>
-                    <label for="ensino fundamental">Ensino Fundamental 1 (1º ao 5º ano)</label><br>
+                    <label for="ensino fundamental">Ensino Fundamental 1 (1º ao 5º ano)&nbsp;&nbsp;&nbsp;&nbsp;</label>
 
                     <input type="radio" name="escolaridade" id="escolaridade" class="escolaridade"
                         value="ensino fundamenta2" required>
-                    <label for="ensino fundamenta2">Ensino Fundamental 2 (6º ao 9º)</label><br>
+                    <label for="ensino fundamenta2">Ensino Fundamental 2 (6º ao 9º)&nbsp;&nbsp;&nbsp;&nbsp;</label>
 
 
                     <input type="radio" name="escolaridade" id="escolaridade" class="escolaridade" value="Ensino Medio"
                         required>
-                    <label for="Ensino fundamenta2">Ensino Medio</label><br>
+                    <label for="Ensino fundamenta2">Ensino Medio&nbsp;&nbsp;&nbsp;&nbsp;</label>
 
                     <input type="radio" name="escolaridade" id="escolaridade" class="escolaridade"
                         value="Ensino Superior" required>
-                    <label for="Ensino Superior">Ensino Superior</label><br>
+                    <label for="Ensino Superior">Ensino Superior&nbsp;&nbsp;&nbsp;&nbsp;</label><br>
 
                 </div>
 
