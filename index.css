@@ -1,4 +1,8 @@
 /* Estilo para o header */
+* {
+    font-family: 'Merriweather', serif;
+  }
+  
 header {
     background-color: rgb(44, 87, 92);
     padding: 1rem;

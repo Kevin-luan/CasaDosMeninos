@@ -1,58 +1,105 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(to right, rgb(44, 88, 94),rgb(44, 90, 70));
-
-}
-
-
-
-
-.table{
-    font-family: cursive;
-background-color:  rgb(223, 129, 61);
-border-radius: 15px;
-position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+/* Fonte geral */
+* {
+    font-family: 'Merriweather', serif;
+    box-sizing: border-box; /* melhora controle de layout */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Fundo com degradê */
+  body {
+    background-color: rgb(44, 87, 92);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  /* Caixa da tabela centralizada e responsiva */
+  .table {
+    background-color: rgb(223, 129, 61);
+    border-radius: 15px;
     padding: 30px;
-}
-
-.coluna th{
-    
+    width: 100%;
+    max-width: 800px;
+    overflow-x: auto; /* scroll horizontal em telas pequenas */ 
+    box-shadow: 20px 20px 12px rgba(0, 0, 0, 0.464);
+  }
+  
+  /* Cabeçalho da tabela */
+  .coluna th {
     color: white;
     font-size: 15px;
     padding: 10px;
-    font-family: cursive;
-    background-color:rgb(44, 90, 70);
-
-}
-th{
+    background-color: rgb(44, 90, 70);
+    text-align: left;
+    box-shadow: 5px 5px 5px black;
+  }
+  
+  th {
     border-radius: 5px;
-}
+    
+  }
+  
+  /* Corpo da tabela */
+  tbody {
 
-a{
-    color: rgb(17, 37, 28);
+    color: white;
+    font-size: 18px;
 
-}
-
-
-a:hover{
-    color: rgb(255, 255, 255);
-
-}
-tbody{
-    font-family: cursive;
-    background-color: rgba(44, 90, 70, 0.333);
-    color:rgb(255, 255, 255);
-    font-size: 20px;
+    
+  }
+  
+  td {
+    padding: 15px;
+  
+  }
  
-
   
-
+  /* Links */
+  a {
+    color: rgb(17, 37, 28);
+    text-decoration: none;
+  }
   
+  a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  /* Responsividade: melhoria em telas menores */
+  @media (max-width: 600px) {
+    .table {
+      padding: 20px;
+    }
+  
+    .coluna th,
+    td {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    body {
+      padding: 10px;
+    }
+  }
+.botao{
+    padding: 5px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: aqua;
+    
 }
+  .botao button{
 
-td{
-    padding: 20px;
-}
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 10px;
+ 
+    
+
+    
+   
+  }
+  

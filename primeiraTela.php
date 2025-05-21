@@ -20,14 +20,22 @@ $result = $conexao->query(query: $sql);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="primeiraTela.css">
     <title>Document</title>
+   
+
+    
 </head>
 <body>
     
 </body>
 </html>
 <header>
-        <a href="login.php"><button>Novo endereço</button></a>
+        
     </header>
+
+   <main>
+
+  
+   
 
 <div class="m-5" >
     <table class="table">
@@ -40,6 +48,7 @@ $result = $conexao->query(query: $sql);
                 <th scope="col">selecão</th>
                 
             </tr>
+            
         </thead>
         <tbody>
             <div class="get">
@@ -72,8 +81,31 @@ $result = $conexao->query(query: $sql);
           
             
             ?>
+            
               </div>
+              
+              
         </tbody>
+        
 
     </table>
+    
+
+    <div class="botao">
+    <a href="login.php"><button>Novo endereço</button></a>
+    </div>
+
+
+   
 </div>
+
+</main>
+
+
+
+
+
+
+
+
+
