@@ -1,108 +1,110 @@
 /* Fonte geral */
 * {
-    font-family: 'Merriweather', serif;
-    box-sizing: border-box; /* melhora controle de layout */
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Fundo com degradê */
-  body {
-    background-color: rgb(44, 87, 92);
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-  }
-  
-  /* Caixa da tabela centralizada e responsiva */
-  .table {
-    background-color: rgb(223, 129, 61);
-    border-radius: 15px;
-    padding: 30px;
-    width: 100%;
-    max-width: 800px;
-    overflow-x: auto; /* scroll horizontal em telas pequenas */ 
-    box-shadow: 20px 20px 12px rgba(0, 0, 0, 0.464);
-  }
-  
-  /* Cabeçalho da tabela */
-  .coluna th {
-    color: white;
-    font-size: 15px;
-    padding: 10px;
-    background-color: rgb(44, 90, 70);
-    text-align: left;
-    box-shadow: 5px 5px 5px black;
-  }
-  
-  th {
-    border-radius: 5px;
-    
-  }
-  
-  /* Corpo da tabela */
-  tbody {
-
-    color: white;
-    font-size: 18px;
-
-    
-  }
-  
-  td {
-    padding: 15px;
-  
-  }
- 
-  
-  /* Links */
-  a {
-    color: rgb(17, 37, 28);
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: white;
-    text-decoration: underline;
-  }
-  
-  /* Responsividade: melhoria em telas menores */
-  @media (max-width: 600px) {
-    .table {
-      padding: 20px;
-    }
-  
-    .coluna th,
-    td {
-      font-size: 14px;
-      padding: 10px;
-    }
-  
-    body {
-      padding: 10px;
-    }
-  }
-.botao{
-    padding: 5px;
-    display: flex;
-    justify-content: flex-end;
-   
+  font-family: 'Merriweather', serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-  .botao button{
 
-    padding: 5px;
-    font-size: 15px;
-    border-radius: 10px;
-    background-color:rgba(255, 255, 255, 0.516);
-    color: black;
-    box-shadow: 3px 3px 3px rgb(0, 0, 0);   
-   
+/* Fundo com degradê */
+body {
+  background-color: rgb(44, 87, 92);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2vw;
+}
+
+/* Caixa da tabela centralizada e responsiva */
+.table {
+  background-color: rgb(223, 129, 61);
+  border-radius: 15px;
+  padding: 5vw;
+  width: 100%;
+  max-width: 800px;
+  overflow-x: auto;
+  box-shadow: 20px 20px 12px rgba(0, 0, 0, 0.464);
+}
+
+/* Cabeçalho da tabela */
+.coluna th {
+  color: white;
+  font-size: clamp(13px, 2vw, 15px);
+  padding: 10px;
+  background-color: rgb(44, 90, 70);
+  text-align: left;
+  box-shadow: 5px 5px 5px black;
+  border-radius: 5px;
+}
+
+/* Corpo da tabela */
+tbody {
+  color: white;
+  font-size: clamp(15px, 2.5vw, 18px);
+}
+
+td {
+  padding: clamp(10px, 2vw, 15px);
+}
+
+/* Links */
+a {
+  color: rgb(17, 37, 28);
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .table {
+    padding: 4vw;
   }
 
-  .botao button:hover{
-
-    background-color:white;
+  .coluna th,
+  td {
+    font-size: 14px;
+    padding: 10px;
   }
-  
+
+  body {
+    padding: 10px;
+  }
+}
+
+/* Botão alinhado à direita */
+.botao {
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.botao button {
+  padding: 8px 15px;
+  font-size: clamp(14px, 2vw, 16px);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.516);
+  color: black;
+  box-shadow: 3px 3px 3px rgb(0, 0, 0);
+  border: none;
+  cursor: pointer;
+}
+
+.botao button:hover {
+  background-color: white;
+}
+
+/* Scroll suave em telas pequenas */
+.table::-webkit-scrollbar {
+  height: 6px;
+}
+.table::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
