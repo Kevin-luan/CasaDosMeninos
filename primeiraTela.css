@@ -13,14 +13,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2vw;
+  padding: 20px;
 }
 
 /* Caixa da tabela centralizada e responsiva */
 .table {
   background-color: rgb(223, 129, 61);
   border-radius: 15px;
-  padding: 5vw;
+  padding: 30px;
   width: 100%;
   max-width: 800px;
   overflow-x: auto;
@@ -30,7 +30,7 @@ body {
 /* Cabeçalho da tabela */
 .coluna th {
   color: white;
-  font-size: clamp(13px, 2vw, 15px);
+  font-size: 14px;
   padding: 10px;
   background-color: rgb(44, 90, 70);
   text-align: left;
@@ -41,11 +41,11 @@ body {
 /* Corpo da tabela */
 tbody {
   color: white;
-  font-size: clamp(15px, 2.5vw, 18px);
+  font-size: 16px;
 }
 
 td {
-  padding: clamp(10px, 2vw, 15px);
+  padding: 12px;
 }
 
 /* Links */
@@ -54,27 +54,19 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+a:hover,
+a:focus {
   color: white;
   text-decoration: underline;
 }
 
-/* Responsividade */
-@media (max-width: 600px) {
-  .table {
-    padding: 4vw;
-  }
 
-  .coluna th,
-  td {
-    font-size: 14px;
-    padding: 10px;
-  }
+ 
 
   body {
     padding: 10px;
   }
-}
+
 
 /* Botão alinhado à direita */
 .botao {
@@ -87,24 +79,18 @@ a:hover {
 
 .botao button {
   padding: 8px 15px;
-  font-size: clamp(14px, 2vw, 16px);
+  font-size: 15px;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.516);
   color: black;
   box-shadow: 3px 3px 3px rgb(0, 0, 0);
   border: none;
   cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .botao button:hover {
   background-color: white;
+  transform: translateY(-2px);
 }
 
-/* Scroll suave em telas pequenas */
-.table::-webkit-scrollbar {
-  height: 6px;
-}
-.table::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0.3);
-  border-radius: 4px;
-}
