@@ -54,7 +54,7 @@ a {
   text-decoration: none;
 }
 
-a:hover,
+
 a:focus {
   color: white;
   text-decoration: underline;
