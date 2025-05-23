@@ -1,148 +1,133 @@
-/* Resetando margens e preenchimento */
-* {
-    margin: 0;
-    padding: 0;
-    flex-wrap: wrap;
-    /* Adiciona flexibilidade para diferentes tamanhos de tela */
-
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: rgba(44, 88, 94);
-}
-
-.tudo label  {
-font-size:20px;
-padding: 30px;
-
-
-
-
-
-
-
-
-}
-
-.feedback1 label:hover{
-    color: rgb(69, 160, 73);
-   
-    
-}
-
-.feedback2 label:hover{
-    color: #108ff1;
-}
-
-.feedback3 label:hover{
-    color: rgb(242, 255, 0) ;
-}
-
-.feedback4 label:hover{
-    color: orange ;
-}
-.feedback5 label:hover{
-    color:red;
-}
-
-
-
-
-
-
-
-
-
-
 /* Estilos para o cabeçalho */
 header {
     background-color: rgb(235, 154, 96);
-
-    padding: 20px;
+    padding: 20px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-}
-
-
-
-header nav ul {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  header h2 {
+    color: #2c585e;
+    margin: 0;
+  }
+  
+  header nav ul {
     list-style-type: none;
     display: flex;
-}
-
-header nav ul li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  header nav ul li {
     margin-left: 20px;
-}
-
-header nav ul li a {
-    color: rgba(44, 88, 94);
+  }
+  
+  header nav ul li a {
+    color: #2c585e;
     text-decoration: none;
-    font-size: 12px;
-}
-
-header nav ul li a:hover {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  header nav ul li a:hover {
     text-decoration: underline;
-}
-
-
-
-
-main {
+  }
+  
+  /* Corpo */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(44, 87, 92);
+    box-shadow: 10px 10px 20px rgb(52, 23, 1);
+  }
+  
+  main {
     background-color: rgb(223, 129, 61);
     position: absolute;
-    top: 58%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 30px;
+    padding: 40px;
     border-radius: 30px;
-}
-
-
-i:hover {
+    box-shadow: 10px 10px 20px rgb(0, 0, 0);
     color: white;
-}
-
-
-
-
-.container button {
-    padding: 10px 20px;
-    /* Aumenta o tamanho do botão */
-    background-color: rgba(44, 88, 94);
-    color: white;
-    /* Cor do texto */
-    border: none;
-    /* Remove borda */
-    border-radius: 5px;
-    /* Bordas arredondadas */
-    font-size: 10px;
-    /* Tamanho da fonte */
-    cursor: pointer;
-    /* Muda o cursor ao passar por cima */
-    transition: background-color 0.3s ease;
-    /* Transição suave para mudança de cor */
-}
-
-/* Estilo quando o botão é pressionado */
-.botao:hover {
-    background-color: #45a049;
-}
-
-/* Posiciona o botão à direita */
-.container {
+    width: 90%;
+    max-width: 500px;
+  }
+  
+  main h1 {
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+  
+  .botoes {
     display: flex;
-    justify-content: flex-end;
-    /* Alinha ao final (direita) */
-    padding: 20px;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  /* Botões */
+  button {
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    width: 200px;
+    margin: 5px;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+  }
+  
+  .muito-bom {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .bom {
+    background-color: #8BC34A;
+    color: white;
+  }
+  
+  .regular {
+    background-color: #FFC107;
+    color: white;
+  }
+  
+  .ruim {
+    background-color: #F44336;
+    color: white;
+  }
+  
+  .ruim:hover {
+      box-shadow: 10px 10px 20px rgb(0, 0, 0);
+  }
+
+
+  .regular:hover {
+    box-shadow: 10px 10px 20px rgb(0, 0, 0);
+}
+.bom:hover {
+    box-shadow: 10px 10px 20px rgb(0, 0, 0);
+}
+.muito-bom:hover {
+    box-shadow: 10px 10px 20px rgb(0, 0, 0);
 }
 
-p{
- color: white;
- font-family: 'Times New Roman', Times, serif;
- font-size: 25px;
+.avancar{
+    background-color: #36aef4;
+    color: white;
+    position: fixed;
+    bottom: 30px;  /* distância do fundo da tela */
+    right: 30px;   /* distância da lateral direita */
+    padding: 15px 25px;
 
 }
 
