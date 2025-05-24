@@ -45,7 +45,7 @@ header {
   }
   
   main {
-    background-color: rgb(223, 129, 61);
+    background-color: rgb(220, 0, 15);
     position: absolute;
     top: 55%;
     left: 50%;
@@ -121,7 +121,18 @@ header {
     box-shadow: 10px 10px 20px rgb(0, 0, 0);
 }
 
-.avancar{
+
+
+input {
+
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    width: 200px;
+    margin: 5px;
     background-color: #36aef4;
     color: white;
     position: fixed;
@@ -131,3 +142,26 @@ header {
 
 }
 
+input:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 10px 20px rgb(0, 0, 0);
+  }
+
+
+
+
+  .radio-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 118px;
+    padding: 100px 105px;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .radio-label input[type="radio"] {
+    width: 60px;
+    height: 60px;
+    accent-color: #00acc1;
+    cursor: pointer;
+  }
