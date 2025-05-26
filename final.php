@@ -13,6 +13,14 @@ $feedback = $_POST['feedback'];
 
 $result = $result = mysqli_query(mysql: $conexao, query: "INSERT INTO feedback( valoFeedback ) Values ('$feedback')");
 
+if ($result) {
+    echo "<script>alert('Feedback enviado com sucesso!');</script>";
+} else {
+    echo "<script>alert('Erro ao enviar feedback: " . mysqli_error($conexao) . "');</script>";
+}
+
+
+
 
 
 ?>
@@ -23,8 +31,8 @@ $result = $result = mysqli_query(mysql: $conexao, query: "INSERT INTO feedback( 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="final.css">
+    <title>feedback</title>
+    <link rel="stylesheet" href="feedbabk.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -56,17 +64,19 @@ $result = $result = mysqli_query(mysql: $conexao, query: "INSERT INTO feedback( 
         <form action="final.php" method="POST">
 
             <fieldset>
-                <legend>aaaaaaa</legend>
+                <legend>Feedback</legend>
 
                 <div>
-                    <button>
 
 
-                        <input type="radio" name="feedback" id="muito-bom" class="radio-label" value="Muito Bom" required>
-                        <label for="muito-bom">Muito Bom</label><br>
+
+                    <input type="radio" name="feedback" id="muito-bom" class="radio-label" value="Muito Bom" required>
+                    <label for="muito-bom">Muito Bom</label><br>
 
 
-                    </button>
+
+
+
 
 
 
@@ -104,8 +114,11 @@ $result = $result = mysqli_query(mysql: $conexao, query: "INSERT INTO feedback( 
 
 
 
+                    <div class="enviar">
+                        <input class="enviar" type="submit" name="submit" id="submit" name="feedback">
 
-                    <input type="submit" name="submit" id="submit">
+
+                    </div>
 
 
 

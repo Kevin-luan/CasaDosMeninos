@@ -171,19 +171,19 @@ if ($result) {
                     <p>Genero</p>
 
                     <input type="radio" name="genero" id="gereno" class="genero" value="cisgenero feminino" required>
-                    <label for="cisgenero feminino">Cisgenero feminino&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <label for="cisgenero feminino">Cisgenero feminino</label>
 
                     <input type="radio" name="genero" id="gereno" class="genero" value="cisgeneromasculino" required>
-                    <label for="cisgenero masculino">Cisgenero masculino&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <label for="cisgenero masculino">Cisgenero masculino</label>
 
                     <input type="radio" name="genero" id="gereno" class="genero" value="transgênero feminino" required>
-                    <label for="transgênero feminino">Transgênero feminino&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <label for="transgênero feminino">Transgênero feminino</label>
 
                     <input type="radio" name="genero" id="gereno" class="genero" value="Transgênero masculino" required>
-                    <label for="Transgênero masculino">Transgênero masculino&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <label for="Transgênero masculino">Transgênero masculino</label>
 
                     <input type="radio" name="genero" id="gereno" class="genero" value="perfiro nao responder" required>
-                    <label for="prefiro não responder">Prefiro não responder&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <label for="prefiro não responder">Prefiro não responder</label>
 
                     <input type="radio" name="genero" id="gereno" class="genero" value="outros" required>
                     <label for="outros">Outros</label><br>
@@ -196,16 +196,16 @@ if ($result) {
                     <p>Com qual cor raça você se identifica: </p>
 
                     <input type="radio" name="raca" id="raca" class="raca" value="preta" required>
-                    <label for="preta">preta&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <label for="preta">preta</label><br>
 
                     <input type="radio" name="raca" id="raca" class="raca" value="branca" required>
-                    <label for="branca">branca&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <label for="branca">branca</label><br>
 
                     <input type="radio" name="raca" id="raca" class="raca" value="parda" required>
-                    <label for="parda">parda&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <label for="parda">parda</label><br>
 
                     <input type="radio" name="raca" id="raca" class="raca" value="amarela" required>
-                    <label for="amarela">amarela&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <label for="amarela">amarela</label><br>
 
                     <input type="radio" name="raca" id="raca" class="raca" value="indegena" required>
                     <label for="indigina">Indigina</label><br><br>
