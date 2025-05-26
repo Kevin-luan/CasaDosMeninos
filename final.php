@@ -7,6 +7,8 @@ if(isset($_POST['submit']))
     print_r(value: $_POST['avaliar']);
 }*/
 
+/*
+
 include_once('config.php');
 $feedback = $_POST['feedback'];
 
@@ -18,6 +20,25 @@ if ($result) {
 } else {
     echo "<script>alert('Erro ao enviar feedback: " . mysqli_error($conexao) . "');</script>";
 }
+*/
+
+include_once('config.php');
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['feedback'])) {
+    $feedback = $_POST['feedback'];
+
+    // Atenção: Evite SQL Injection
+    $feedback = mysqli_real_escape_string($conexao, $feedback);
+
+    $result = mysqli_query($conexao, "INSERT INTO feedback(valoFeedback) VALUES ('$feedback')");
+
+    if ($result) {
+        echo "<script>alert('Feedback enviado com sucesso!');</script>";
+    } else {
+        echo "<script>alert('Erro ao enviar feedback: " . mysqli_error($conexao) . "');</script>";
+    }
+}
+
 
 
 
