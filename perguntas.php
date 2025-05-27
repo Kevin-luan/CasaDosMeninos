@@ -103,7 +103,7 @@ if (isset($_POST['submit'])) {
 
 if ($result) {
     // Redireciona para uma página HTML de confirmação
-    header("Location: final.html");
+    header("Location: final.php");
     exit();
 } else {
     echo "Erro ao enviar o formulário: " . mysqli_error($conexao);
