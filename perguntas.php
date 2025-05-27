@@ -316,7 +316,7 @@ if ($result) {
 
 
                     <label for="nome">Outro motivo (especifique): </label>
-                    <input type="text" name="motivacaoTrabalho[]" id="motivacaoTrabalho[]" class="inputUser" required>
+                    <input type="text" name="motivacaoTrabalho[]" id="motivacaoTrabalho[]" class="inputUser">
 
 
 
