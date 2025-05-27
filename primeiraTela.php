@@ -19,12 +19,13 @@ $result = $conexao->query(query: $sql);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="primeiraTela.css">
+    <link rel="stylesheet" href="teste.css">
     <title>primeiraTela</title>
 
 
 
 </head>
+
 
 
 
@@ -99,9 +100,7 @@ $result = $conexao->query(query: $sql);
 
 
     </div>
-    <div class="botao2">
-            <a href="index.html"><button>Voltar</button></a>
-        </div>
+   
 
 
 </main>

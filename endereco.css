@@ -11,11 +11,13 @@ body{
     transform: translate(-50%,-50%);
     background-color: rgb(223, 129, 61);
     padding: 15px;
-    border-radius: 10px;
+    border-radius: 30px;
+    
 }
 
 fieldset{
     border: 5px solid  rgba(44, 88, 94 );
+    
 }
 
 legend{
@@ -23,6 +25,7 @@ legend{
     padding: 15px;
     background-color:  rgba(44, 88, 94 );
     border-radius: 10px;
+
     
 }
 

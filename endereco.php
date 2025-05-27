@@ -1,5 +1,5 @@
 <?php
-if(isset($_POST['submit'])){
+if (isset($_POST['submit'])) {
 
 
 
@@ -12,19 +12,19 @@ if(isset($_POST['submit'])){
     print_r($_POST['bairro']);
     */
 
-        include_once('config.php');
+    include_once('config.php');
     $nome = $_POST['nome'];
     $estado = $_POST['estado'];
     $cidade = $_POST['cidade'];
     $bairro = $_POST['bairro'];
 
-    $result = mysqli_query(mysql: $conexao, query:"INSERT INTO endereco(nome,cidade,estado,rua) VALUES('$nome','$cidade','$estado','$bairro')");
+    $result = mysqli_query(mysql: $conexao, query: "INSERT INTO endereco(nome,cidade,estado,rua) VALUES('$nome','$cidade','$estado','$bairro')");
 }
 
 ?>
 
 
-                  
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -38,57 +38,89 @@ if(isset($_POST['submit'])){
 <body>
 
     <div class="box">
-    <form action="endereco.php" method="post">
-        
-        <fieldset>
-            <legend>Endereço</legend><br>
+        <form action="endereco.php" method="post">
+
+            <fieldset>
+                <legend>Endereço</legend><br>
 
 
-            <!--Input local do nome--->
+                <!--Input local do nome--->
 
-            <div class="inputBox">
-                <input type="text" name="nome" id="nome" class="inputUser" required>
-                <label for="nome">Nome do local da pesquisa</label>
-            </div> <br>
+                <div class="inputBox">
+                    <input type="text" name="nome" id="nome" class="inputUser" value="Nome" required>
+                    <label for="nome"></label>
+                </div> <br>
 
-             <!--Input estado --->
-             <div class="inputBox">
-                <input type="text" name="estado" id="estado" class="inputUser" required>
-                <label for="nome">Estado</label>
-            </div> <br>
+                <!--Input estado --->
+                <div class="inputBox">
+                <label for="estado"></label>
+<select name="estado" id="estado" class="inputUser" required>
+  <option value="" disabled selected>Selecione seu estado</option>
+  <option value="AC">AC</option>
+  <option value="AL">AL</option>
+  <option value="AP">AP</option>
+  <option value="AM">AM</option>
+  <option value="BA">BA</option>
+  <option value="CE">CE</option>
+  <option value="DF">DF</option>
+  <option value="ES">ES</option>
+  <option value="GO">GO</option>
+  <option value="MA">MA</option>
+  <option value="MT">MT</option>
+  <option value="MS">MS</option>
+  <option value="MG">MG</option>
+  <option value="PA">PA</option>
+  <option value="PB">PB</option>
+  <option value="PR">PR</option>
+  <option value="PE">PE</option>
+  <option value="PI">PI</option>
+  <option value="RJ">RJ</option>
+  <option value="RN">RN</option>
+  <option value="RS">RS</option>
+  <option value="RO">RO</option>
+  <option value="RR">RR</option>
+  <option value="SC">SC</option>
+  <option value="SP">SP</option>
+  <option value="SE">SE</option>
+  <option value="TO">TO</option>
+</select>
 
-             <!--Input cidade --->
+                   
 
-             <div class="inputBox">
-                <input type="text" name="cidade" id="estado" class="inputUser" required>
-                <label for="nome">Cidade</label>
-            </div> <br>
+                </div> <br>
 
-             <!--Input bairro --->
+                <!--Input cidade --->
 
-             <div class="inputBox">
-                <input type="text" name="bairro" id="bairro" class="inputUser" required>
-                <label for="nome">Bairro</label>
-            </div> <br>
+                <div class="inputBox">
+                    <input type="text" name="cidade" id="estado" class="inputUser" value="Cidade" required>
+                    <label for="nome"></label>
+                </div> <br>
 
+                <!--Input bairro --->
 
-
-             <!--Input Enviar--->
-
-             <input c type="submit" name="submit" id="submit">
-
-             
+                <div class="inputBox">
+                    <input type="text" name="bairro" id="bairro" class="inputUser" value="Bairro" required>
+                    <label for="nome"></label>
+                </div> <br>
 
 
 
-        </fieldset>
-        
+                <!--Input Enviar--->
+
+                <input c type="submit" name="submit" id="submit">
+
+
+
+
+
+            </fieldset>
+
 
         </form>
         <a href="primeiraTela.php
         "><button>Voltar</button></a>
 
-    </div> 
+    </div>
 
 </body>
 
