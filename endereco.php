@@ -41,7 +41,7 @@ if (isset($_POST['submit'])) {
         <form action="endereco.php" method="post">
 
             <fieldset>
-                <legend>Endereço</legend><br>
+                <legend>Cadastre novo local para realizar a pesquisa </legend><br>
 
 
                 <!--Input local do nome--->

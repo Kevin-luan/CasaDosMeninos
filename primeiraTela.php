@@ -94,6 +94,8 @@ $result = $conexao->query(query: $sql);
 
         <div class="botao">
             <a href="login.php"><button>Novo endereço</button></a>
+            <div class="botaoVoltar"> <a href="index.html"><button id="botaoVoltar">Voltar</button></a></div>
+           
         </div>
         
 

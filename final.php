@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['feedback'])) {
     $result = mysqli_query($conexao, "INSERT INTO feedback(valoFeedback) VALUES ('$feedback')");
 
     if ($result) {
-        echo "<script>alert('Feedback enviado com sucesso!');</script>";
+        echo "<script>alert('Pesquisa enviada com sucesso!');</script>";
     } else {
         echo "<script>alert('Erro ao enviar feedback: " . mysqli_error($conexao) . "');</script>";
     }

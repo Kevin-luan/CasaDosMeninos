@@ -101,13 +101,13 @@ if (isset($_POST['submit'])) {
             VALUES('$ids','$idade','$genero','$raca','$escolaridade','$trabalha','$motivacaoTrabalho','$pergunta7A','$pergunta7B','$pergunta7C','$pergunta7D','$pergunta7E',' $pergunta8', '$pergunta9','$pergunta10','$pergunta11A','$pergunta11B','$pergunta11C','$pergunta11D','$pergunta11E','$pergunta11F','$pergunta11G','$pergunta11H','$pergunta11I','$pergunta11J','$pergunta12','$pergunta13','$pergunta14','$pergunta15','$pergunta16','$pergunta17','$pergunta18','$pergunta19','$pergunta20')");
 
 
-if ($result) {
-    // Redireciona para uma página HTML de confirmação
-    header("Location: final.php");
-    exit();
-} else {
-    echo "Erro ao enviar o formulário: " . mysqli_error($conexao);
-}
+    if ($result) {
+        // Redireciona para uma página HTML de confirmação
+        header("Location: final.php");
+        exit();
+    } else {
+        echo "Erro ao enviar o formulário: " . mysqli_error($conexao);
+    }
 
 
 }
@@ -124,7 +124,7 @@ if ($result) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>selecct enderecos</title>
     <link rel="stylesheet" href="perguntas.css">
- 
+
 
 </head>
 
@@ -138,7 +138,8 @@ if ($result) {
     <form action="perguntas.php" method="POST">
 
         <fieldset>
-            <legend>Pesquisa DCA</legend>
+            <legend>Pesquisa do projeto Centro de Memória Terezinha Helena dos Direitos de Criança e Adolescente
+            </legend>
             <nav class=" lisPerguntas">
 
                 <!---- 1 pergunta-->
@@ -148,7 +149,7 @@ if ($result) {
                 <div class="pergunta1">
                     <input type="hidden" name="ids" value="<?php echo htmlspecialchars($ids); ?>">
 
-                    <p class="paragrafo">Sua idade</p>
+                    <p class="paragrafo">1) Sua idade?</p>
 
                     <input type="radio" name="idade" id="idade" class="idade" value="cianca" required>
                     <label for="crianca">Criança&nbsp;&nbsp;&nbsp;&nbsp;</label>
@@ -168,7 +169,7 @@ if ($result) {
 
                 <!---- 2 pergunta-->
                 <div class="pergunta2">
-                    <p>Genero</p>
+                    <p>2) Genero ?</p>
 
                     <input type="radio" name="genero" id="gereno" class="genero" value="cisgenero feminino" required>
                     <label for="cisgenero feminino">Cisgenero feminino</label>
@@ -186,14 +187,17 @@ if ($result) {
                     <label for="prefiro não responder">Prefiro não responder</label>
 
                     <input type="radio" name="genero" id="gereno" class="genero" value="outros" required>
-                    <label for="outros">Outros</label><br>
+                    <label for="outros">não binário</label><br><br>
+
+                    <input type="radio" name="genero" id="gereno" class="genero" value="outros" required>
+                    <label for="outros">Outros</label><br><br>
 
                 </div>
 
                 <!---- 3 pergunta-->
                 <div class="pergunta3">
 
-                    <p>Com qual cor raça você se identifica: </p>
+                    <p>3) Com qual cor raça você se identifica? </p>
 
                     <input type="radio" name="raca" id="raca" class="raca" value="preta" required>
                     <label for="preta">preta</label><br>
@@ -214,7 +218,7 @@ if ($result) {
 
                 <!---- 4 pergunta--------------------------------------------------->
                 <div class="pergub=nta4">
-                    <p>Escolaridade</p>
+                    <p>4) Escolaridade ?</p>
 
                     <input type="radio" name="escolaridade" id="escolaridade" class="escolaridade"
                         value="ensino fundamental" required>
@@ -237,7 +241,7 @@ if ($result) {
 
                 <!---- 5 pergunta--------------------------------------------------->
                 <div class="pergunta5">
-                    <p>Voce Trabalha?</p>
+                    <p>5) Atualmente Você Trabalha?</p>
 
                     <input type="radio" name="trabalha" id="trabalha" class="trabalha" value="Sim" required>
                     <label for="Sim">Sim</label><br>
@@ -249,7 +253,7 @@ if ($result) {
 
                 <!---- 6 pergunta--------------------------------------------------->
                 <div class="pergunta6">
-                    <p>Qual motivação para Criança e adolecente trabalha</p>
+                    <p>6) Qual motivação para Criança e adolecente trabalha ?</p>
 
 
                     <label>
@@ -328,18 +332,19 @@ if ($result) {
 
                 <div class="pergunta7">
 
-                    <h4>Desde 2013 o ensino obrigatório passou a ser da educação infantil a partir de 4 anos até o fim
+                    <h4>7) Verdadeiro ou falso <p></p>
+                        Desde 2013 o ensino obrigatório passou a ser da educação infantil a partir de 4 anos até o fim
                         do
                         ensino médio. Por quais motivos você acha que levou a educação do ensino básico (4 a 17 anos) se
-                        tornar obrigatório no Brasil?</h4><br><br>
+                        tornar obrigatório no Brasil:</h4><br><br>
 
 
-                    <h4>Verdadeiro ou falso</h4>
+
 
                     <div class="pergunta7A">
 
-                        <p>Para cumprir a Emenda Constitucional nº 59/2009, que ampliou a obrigatoriedade da educação
-                            básica."
+                        <p>7a) Para cumprir a Emenda Constitucional nº 59/2009, que ampliou a obrigatoriedade da
+                            educação básica ?
                         </p>
 
                         <input type="radio" name="pergunta7A" id="pergunta7A" class="pergunta7A" value="Verdadeiro"
@@ -357,10 +362,10 @@ if ($result) {
                     <div class="pergunta7B">
 
 
-                        <p>Para alinhar o Brasil às metas do Plano Nacional de Educação (PNE), que prevê a
+                        <p>7b) Para alinhar o Brasil às metas do Plano Nacional de Educação (PNE), que prevê a
                             universalização
                             do
-                            acesso. </p>
+                            acesso ? </p>
 
                         <input type="radio" name="pergunta7B" id="pergunta7B" class="pergunta7B" value="Verdadeiro"
                             required>
@@ -376,8 +381,8 @@ if ($result) {
 
                     <div class="pergunta7C">
 
-                        <p>Porque crianças a partir de 4 anos passaram a ser consideradas adultas pela legislação
-                            brasileira.
+                        <p>7c) Porque crianças a partir de 4 anos passaram a ser consideradas adultas pela legislação
+                            brasileira ?
                         </p>
 
                         <input type="radio" name="pergunta7C" id="pergunta7C" class="pergunta7C" value="Verdadeiro"
@@ -395,7 +400,7 @@ if ($result) {
 
                     <div class="pergunta7D">
 
-                        <p>Para evitar que adolescentes de 16 anos votem, já que estariam ocupados com os estudos.
+                        <p>7d) Para evitar que adolescentes de 16 anos votem, já que estariam ocupados com os estudos ?
                         </p>
 
                         <input type="radio" name="pergunta7D" id="pergunta7D" class="pergunta7D" value="Verdadeiro"
@@ -414,7 +419,7 @@ if ($result) {
 
                     <div class="pergunta7E">
 
-                        <p>Porque empresas privadas exigiam mão de obra mais qualificada desde a primeira infância.
+                        <p>7e) Porque empresas privadas exigiam mão de obra mais qualificada desde a primeira infância ?
                         </p>
 
                         <input type="radio" name="pergunta7E" id="pergunta7E" class="pergunta7E" value="Verdadeiro"
@@ -438,7 +443,7 @@ if ($result) {
                 <!---- 8 pergunta ------------------------>
 
                 <div class="pergunta8">
-                    <p>Você sabe o que é o ECA</p>
+                    <p>8) Você sabe o que é o ECA ?</p>
 
                     <input type="radio" name="pergunta8" id="pergunta8" class="pergunta8" value="Sim" required>
                     <label for="verdadeiro">Sim</label><br>
@@ -450,7 +455,7 @@ if ($result) {
                 <!---- 9 pergunta ------------------------>
 
                 <div class="pergunta9">
-                    <p>Você sabe quando o ECA foi criado</p>
+                    <p>9) Você sabe quando o ECA foi criado ?</p>
 
                     <input type="radio" name="pergunta9" id="pergunta9" class="pergunta9" value="Sim" required>
                     <label for="verdadeiro">Sim</label><br>
@@ -464,22 +469,22 @@ if ($result) {
 
 
                 <div class="pergunta10">
-                    <p>Por qual motivo você acha que foi construído o estatuto da criança e adolescente?</p>
+                    <p>10) Por qual motivo você acha que foi construído o estatuto da criança e adolescente ?</p>
 
                     <label for="nome">Resposta: </label>
                     <input type="text" name="pergunta10" id="pergunta10" class="inputUser" required>
 
-                </div>
+                </div><br>
 
                 <!---- 11 pergunta perguntas de verdeiro ou falso------------------------>
 
                 <div class="pergunta11">
 
-                    <h4>O que o Conselho Tutelar realmente faz </h4>
+                    <h4>11) Verdadeiro ou falso <p></p>O que o Conselho Tutelar realmente faz ? </h4>
 
 
                     <div class="pergunta11A">
-                        <p>Atender crianças e adolescentes em situação de risco (violência, abandono, trabalho infantil)
+                        <p>11a) Atender crianças e adolescentes em situação de risco (violência, abandono, trabalho infantil) ?
                         </p>
 
                         <input type="radio" name="pergunta11A" id="pergunta11A" class="pergunta11A" value="Verdadeiro"
@@ -493,7 +498,7 @@ if ($result) {
                     </div>
 
                     <div class="pergunta11B">
-                        <p>Aplicar medidas de proteção, como encaminhamento a abrigos ou programas sociais.
+                        <p>11b) Aplicar medidas de proteção, como encaminhamento a abrigos ou programas sociais?
                         </p>
 
                         <input type="radio" name="pergunta11B" id="pergunta11B" class="pergunta11B" value="Verdadeiro"
@@ -507,8 +512,8 @@ if ($result) {
                     </div>
 
                     <div class="pergunta11C">
-                        <p>Fiscalizar o cumprimento dos direitos da criança e do adolescente (educação, saúde,
-                            convivência familiar.
+                        <p>11c) Fiscalizar o cumprimento dos direitos da criança e do adolescente (educação, saúde,
+                            convivência familiar) ?
                         </p>
 
                         <input type="radio" name="pergunta11C" id="pergunta11C" class="pergunta11C" value="Verdadeiro"
@@ -522,7 +527,7 @@ if ($result) {
                     </div>
 
                     <div class="pergunta11D">
-                        <p>"Receber denúncias de violações de direitos via Disque 100 ou diretamente na sede
+                        <p>11d) Receber denúncias de violações de direitos via Disque 100 ou diretamente na sede ?
                         </p>
 
                         <input type="radio" name="pergunta11D" id="pergunta11D" class="pergunta11D" value="Verdadeiro"
@@ -536,7 +541,7 @@ if ($result) {
                     </div>
 
                     <div class="pergunta11E">
-                        <p>Exigir que pais ou responsáveis cumpram obrigações (como matricular filhos na escola).
+                        <p>11e) Exigir que pais ou responsáveis cumpram obrigações (como matricular filhos na escola) ?
                         </p>
 
                         <input type="radio" name="pergunta11E" id="pergunta11E" class="pergunta11E" value="Verdadeiro"
@@ -551,7 +556,7 @@ if ($result) {
 
 
                     <div class="pergunta11F">
-                        <p>Punir adolescentes infratores com prisão ou medidas socioeducativas.
+                        <p>11f) Punir adolescentes infratores com prisão ou medidas socioeducativas ?
                         </p>
 
                         <input type="radio" name="pergunta11F" id="pergunta11F" class="pergunta11F" value="Verdadeiro"
@@ -566,7 +571,7 @@ if ($result) {
 
 
                     <div class="pergunta11G">
-                        <p>"Substituir a família, tirando crianças de casa sem justificativa legal.
+                        <p>11g) Substituir a família, tirando crianças de casa sem justificativa legal ?
                         </p>
 
                         <input type="radio" name="pergunta11G" id="pergunta11G" class="pergunta11G" value="Verdadeiro"
@@ -580,7 +585,7 @@ if ($result) {
                     </div>
 
                     <div class="pergunta11H">
-                        <p>"Dar multas ou prender pais que não vacinarem os filhos.
+                        <p>11h) Dar multas ou prender pais que não vacinarem os filhos ?
                         </p>
 
                         <input type="radio" name="pergunta11H" id="pergunta11H" class="pergunta11H" value="Verdadeiro"
@@ -595,7 +600,7 @@ if ($result) {
 
 
                     <div class="pergunta11I">
-                        <p>Fornecer auxílio financeiro diretamente às famílias.
+                        <p>11i) Fornecer auxílio financeiro diretamente às famílias ?
                         </p>
 
                         <input type="radio" name="pergunta11I" id="pergunta11I" class="pergunta11I" value="Verdadeiro"
@@ -609,7 +614,7 @@ if ($result) {
                     </div>
 
                     <div class="pergunta11J">
-                        <p>Decidir sozinho sobre adoções internacionais.
+                        <p>11j) Decidir sozinho sobre adoções internacionais ?
                         </p>
 
                         <input type="radio" name="pergunta11J" id="pergunta11J" class="pergunta11J" value="Verdadeiro"
@@ -618,7 +623,7 @@ if ($result) {
 
                         <input type="radio" name="pergunta11J" id="pergunta11J" class="pergunta11J" value="falso"
                             required>
-                        <label for="falso">Falso</label><br>
+                        <label for="falso">Falso</label><br><br><br>
 
                     </div>
 
@@ -638,7 +643,7 @@ if ($result) {
                 <div class="pergunta12">
 
 
-                    <p class="paragrafo">Em relação a redução da maioridade penal você é</p>
+                    <p class="paragrafo">12) Em relação a redução da maioridade penal você é ?</p>
 
                     <input type="radio" name="pergunta12" id="pergunta12" class="pergunta12" value="contra" required>
                     <label for="crianca">Contra</label>
@@ -647,7 +652,7 @@ if ($result) {
                     <label for="crianca">A favor</label>
 
                     <input type="radio" name="pergunta12" id="pergunta12" class="pergunta12" value="nao sei" required>
-                    <label for="crianca">Não sei</label>
+                    <label for="crianca">Não sei</label><br><br>
 
 
                 </div>
@@ -655,15 +660,15 @@ if ($result) {
                 <!---- 13 pergunta perguntas de verdeiro ou falso------------------------>
                 <div class="pergunta13">
 
-                    <p>Você participa de algum grupo ou movimento que discute sobre o Direitos de Criança e Adolescente
-                        (DCA):
+                    <p>13) Você participa de algum grupo ou movimento que discute sobre o Direitos de Criança e Adolescente
+                        (DCA) ?
                     </p>
 
                     <input type="radio" name="pergunta13" id="pergunta13" class="pergunta13" value="Sim" required>
                     <label for="Sim">Sim</label><br>
 
                     <input type="radio" name="pergunta13" id="pergunta13" class="pergunta13" value="Não" required>
-                    <label for="Não">Não</label><br>
+                    <label for="Não">Não</label><br><br>
 
 
                 </div>
@@ -671,7 +676,7 @@ if ($result) {
                 <!---- 14 pergunta perguntas de verdeiro ou falso------------------------>
                 <div class="pergunta14">
 
-                    <p>Na escola você discute sobre o DCA:
+                    <p>14) Na escola você discute sobre o DCA ?
                     </p>
 
                     <input type="radio" name="pergunta14" id="pergunta14" class="pergunta14" value="Sim" required>
@@ -683,7 +688,7 @@ if ($result) {
                     <input type="radio" name="pergunta14" id="pergunta14" class="pergunta14"
                         value="não consigo responder" required>
                     <label for="Sim">Não consigo responder
-                    </label><br>
+                    </label><br><br>
                 </div>
 
 
@@ -691,15 +696,14 @@ if ($result) {
 
                 <div class="pergunta15">
 
-                    <p>Você já ouviu falar sobre as Conferências de DCA?:
+                    <p>15) Você já ouviu falar sobre as Conferências de DCA ?
                     </p>
 
                     <input type="radio" name="pergunta15" id="pergunta15" class="pergunta15" value="Sim" required>
                     <label for="Sim">Sim</label><br>
 
                     <input type="radio" name="pergunta15" id="pergunta15" class="pergunta15" value="nao" required>
-                    <label for="nao">Não</label><br>
-
+                    <label for="nao">Não</label><br><br>
                 </div>
 
 
@@ -707,7 +711,7 @@ if ($result) {
 
                 <div class="pergunta16">
 
-                    <p>Você já participou de alguma Conferência DCA?
+                    <p>16) Você já participou de alguma Conferência DCA ?
 
                     </p>
 
@@ -715,7 +719,7 @@ if ($result) {
                     <label for="Sim">Sim</label><br>
 
                     <input type="radio" name="pergunta16" id="pergunta16" class="pergunta16" value="nao" required>
-                    <label for="nao">Não</label><br>
+                    <label for="nao">Não</label><br><br>
 
                 </div>
 
@@ -723,19 +727,19 @@ if ($result) {
                 <!---- 17 pergunta perguntas de verdeiro ou falso------------------------>
                 <div class="pergunta17">
 
-                    <p>Você acha que criança e adolescente precisa de mais direitos:
+                    <p>17) Você acha que criança e adolescente precisa de mais direitos ?
                     </p>
 
                     <label for="nome">Resposta: </label>
                     <input type="text" name="pergunta17" id="pergunta17" class="inputUser" required>
 
-                </div>
+                </div><br>
 
                 <!---- 18 pergunta perguntas de verdeiro ou falso------------------------>
 
                 <div class="pergunta18">
 
-                    <p>Você sabia que os conselheiros tutelares são eleitos pela população a cada 4 anos?
+                    <p>18) Você sabia que os conselheiros tutelares são eleitos pela população a cada 4 anos ?
 
                     </p>
 
@@ -743,7 +747,7 @@ if ($result) {
                     <label for="Sim">Sim</label><br>
 
                     <input type="radio" name="pergunta18" id="pergunta18" class="pergunta18" value="nao" required>
-                    <label for="nao">Não</label><br>
+                    <label for="nao">Não</label><br><br>
 
                 </div>
 
@@ -753,14 +757,14 @@ if ($result) {
                 <div class="pergunta19">
 
 
-                    <p>você conhece algum conselheiro tutelar
+                    <p>19) Você conhece algum conselheiro tutelar ?
                     </p>
 
                     <input type="radio" name="pergunta19" id="pergunta19" class="pergunta19" value="Sim" required>
                     <label for="Sim">Sim</label><br>
 
                     <input type="radio" name="pergunta19" id="pergunta19" class="pergunta19" value="nao" required>
-                    <label for="nao">Não</label><br>
+                    <label for="nao">Não</label><br><br>
 
                 </div>
 
@@ -769,7 +773,7 @@ if ($result) {
 
                 <div class="pergunta20">
 
-                    <p>Na sua opinião, qual é um dos direitos de crianças e adolescentes mais importantes:
+                    <p>20) Na sua opinião, qual é um dos direitos de crianças e adolescentes mais importantes ?
                     </p>
 
                     <label for="nome">Resposta: </label>
