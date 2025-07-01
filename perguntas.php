@@ -254,19 +254,13 @@ if (isset($_POST['submit'])) {
                     <p>5) Atualmente Você Trabalha?</p>
 
                     <input type="radio" name="trabalha" id="trabalha" class="trabalha" value="Sim" required>
-                    <label for="Sim">Sim  DIgite o porque:  <input type="text" name="trabalha" id="trabalho" class="trabalha"></label> <br> 
+                    <label for="Sim">Sim <br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Digite o porque:  <input type="text" name="trabalha" id="trabalho" class="inputUser" <p>(Não obrigatorio)</p> </label>
                     
-                    
-                      <label for="nome"><P>DIgite o porque: </label>
-                    
-                    
-                  
-                  
-
 
 
                     <input type="radio" name="trabalha" id="trabalha" class="trabalha" value="Nao" required>
-                    <label for="nao">Não</label><br>
+                    <label for="nao">Não</label><br><br>
 
              
                 </div>
