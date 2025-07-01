@@ -149,7 +149,7 @@ if (isset($_POST['submit'])) {
                 <div class="pergunta1">
                     <input type="hidden" name="ids" value="<?php echo htmlspecialchars($ids); ?>">
 
-                    <p class="paragrafo">1) Sua idade?</p>
+                    <p class="paragrafo">1) Você se considera</p>
 
                     <input type="radio" name="idade" id="idade" class="idade" value="cianca" required>
                     <label for="crianca">Criança&nbsp;&nbsp;&nbsp;&nbsp;</label>
@@ -169,7 +169,7 @@ if (isset($_POST['submit'])) {
 
                 <!---- 2 pergunta-->
                 <div class="pergunta2">
-                    <p>2) Genero ?</p>
+                    <p>2) Qual gênero você se identifica ?</p>
 
                     <input type="radio" name="genero" id="gereno" class="genero" value="cisgenero feminino" required>
                     <label for="cisgenero feminino">Cisgenero feminino</label>
@@ -187,7 +187,7 @@ if (isset($_POST['submit'])) {
                     <label for="prefiro não responder">Prefiro não responder</label>
 
                     <input type="radio" name="genero" id="gereno" class="genero" value="outros" required>
-                    <label for="outros">não binário</label><br><br>
+                    <label for="outros">Não binário</label><br><br>
 
                     <input type="radio" name="genero" id="gereno" class="genero" value="outros" required>
                     <label for="outros">Outros</label><br><br>
@@ -217,25 +217,35 @@ if (isset($_POST['submit'])) {
                 </div>
 
                 <!---- 4 pergunta--------------------------------------------------->
-                <div class="pergub=nta4">
+                <div class="pergunta4">
                     <p>4) Escolaridade ?</p>
 
                     <input type="radio" name="escolaridade" id="escolaridade" class="escolaridade"
                         value="ensino fundamental" required>
-                    <label for="ensino fundamental">Ensino Fundamental 1 (1º ao 5º ano)&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <label for="ensino fundamental">Ensino Fundamental 1 (1º ao 5º ano)</label><br>
 
                     <input type="radio" name="escolaridade" id="escolaridade" class="escolaridade"
                         value="ensino fundamenta2" required>
-                    <label for="ensino fundamenta2">Ensino Fundamental 2 (6º ao 9º)&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <label for="ensino fundamenta2">Ensino Fundamental 2 (6º ao 9º)</label><br>
 
 
                     <input type="radio" name="escolaridade" id="escolaridade" class="escolaridade" value="Ensino Medio"
                         required>
-                    <label for="Ensino fundamenta2">Ensino Medio&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <label for="Ensino fundamenta2">Ensino Medio</label><br>
 
                     <input type="radio" name="escolaridade" id="escolaridade" class="escolaridade"
                         value="Ensino Superior" required>
-                    <label for="Ensino Superior">Ensino Superior&nbsp;&nbsp;&nbsp;&nbsp;</label><br>
+                    <label for="Ensino Superior">Ensino Superior</label><br>
+
+                      <input type="radio" name="escolaridade" id="escolaridade" class="escolaridade"
+                        value="Ensino Superior" required>
+                    <label for="Ensino Superior">Nunca estudei</label><br>
+
+                    <input type="radio" name="escolaridade" id="escolaridade" class="escolaridade"
+                        value="Ensino Superior" required>
+                    <label for="Ensino Superior">Outros</label><br>
+
+
 
                 </div>
 
@@ -244,11 +254,21 @@ if (isset($_POST['submit'])) {
                     <p>5) Atualmente Você Trabalha?</p>
 
                     <input type="radio" name="trabalha" id="trabalha" class="trabalha" value="Sim" required>
-                    <label for="Sim">Sim</label><br>
+                    <label for="Sim">Sim  DIgite o porque:  <input type="text" name="trabalha" id="trabalho" class="trabalha"></label> <br> 
+                    
+                    
+                      <label for="nome"><P>DIgite o porque: </label>
+                    
+                    
+                  
+                  
+
+
 
                     <input type="radio" name="trabalha" id="trabalha" class="trabalha" value="Nao" required>
                     <label for="nao">Não</label><br>
 
+             
                 </div>
 
                 <!---- 6 pergunta--------------------------------------------------->
